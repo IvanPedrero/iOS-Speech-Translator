@@ -1,0 +1,9 @@
+target 'Speech Translator' do
+  use_frameworks!
+
+pod 'IBMWatsonSpeechToTextV1'
+pod 'IBMWatsonLanguageTranslatorV3'
+pod 'IBMWatsonTextToSpeechV1'
+pod 'iOSDropDown'
+
+end

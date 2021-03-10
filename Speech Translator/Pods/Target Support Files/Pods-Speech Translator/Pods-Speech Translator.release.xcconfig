@@ -1,0 +1,14 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMSwiftSDKCore" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonLanguageTranslatorV3" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonTextToSpeechV1" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream" "${PODS_CONFIGURATION_BUILD_DIR}/iOSDropDown"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMSwiftSDKCore/IBMSwiftSDKCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonLanguageTranslatorV3/LanguageTranslator.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonTextToSpeechV1/TextToSpeech.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/iOSDropDown/iOSDropDown.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/IBMWatsonSpeechToTextV1/Sources/SupportingFiles/Dependencies/Libraries" "${PODS_ROOT}/IBMWatsonTextToSpeechV1/Sources/SupportingFiles/Dependencies/Libraries"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "IBMSwiftSDKCore" -framework "LanguageTranslator" -framework "SpeechToText" -framework "Starscream" -framework "TextToSpeech" -framework "UIKit" -framework "iOSDropDown"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

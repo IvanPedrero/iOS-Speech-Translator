@@ -1,0 +1,38 @@
+PODS:
+  - IBMSwiftSDKCore (1.0.0)
+  - IBMWatsonLanguageTranslatorV3 (4.1.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+  - IBMWatsonSpeechToTextV1 (4.1.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+    - Starscream (~> 4.0.0)
+  - IBMWatsonTextToSpeechV1 (4.1.0):
+    - IBMSwiftSDKCore (~> 1.0.0)
+  - iOSDropDown (0.3.4)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - IBMWatsonLanguageTranslatorV3
+  - IBMWatsonSpeechToTextV1
+  - IBMWatsonTextToSpeechV1
+  - iOSDropDown
+
+SPEC REPOS:
+  trunk:
+    - IBMSwiftSDKCore
+    - IBMWatsonLanguageTranslatorV3
+    - IBMWatsonSpeechToTextV1
+    - IBMWatsonTextToSpeechV1
+    - iOSDropDown
+    - Starscream
+
+SPEC CHECKSUMS:
+  IBMSwiftSDKCore: 54ad77b03a4d27b218ba514580197db3b89a96ca
+  IBMWatsonLanguageTranslatorV3: db22fa52cba6efeb054526204563281112615129
+  IBMWatsonSpeechToTextV1: 56d33298cc0255770a0e05eba249c59ea7ee4340
+  IBMWatsonTextToSpeechV1: 2862546258f233dfd39f0b8000b67cb9fbc9ba33
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 37981a407d6a7a21d7c3f3d9d8c4c78cb7bc8fd1
+
+COCOAPODS: 1.9.3

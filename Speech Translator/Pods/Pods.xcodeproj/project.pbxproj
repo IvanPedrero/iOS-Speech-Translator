@@ -1,0 +1,2131 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07870DA74BEB543A2A99CEB1C75D9D17 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA93BDBBAA8F8FCE4F11C8A059026608 /* Word.swift */; };
+		0D605CB4A8E36A327F7B7CA94A5F1E16 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B89F0360CE5CEEBABE1B4F37C6D32E /* Shared.swift */; };
+		0D89C22BF4E0BE4C9F4AF1019ACC6CA8 /* Pods-Speech Translator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D1E4384E2D628C3F41DE2F9E1D6AAD /* Pods-Speech Translator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1064BD3196C127515261D0A3DCB71C87 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9F127F3438B124B6DE8216AE0EA6DD /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11BED89B08A3DD655A4EB3CFFF6D0CBD /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A5439F865ED63CA46AA91223E05364 /* TCPTransport.swift */; };
+		11D4D4A4B7C965412CE5DF3B554CE534 /* ProcessedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591F9122EA187272C68AAE5F3D763AAA /* ProcessedAudio.swift */; };
+		18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8287F367DCB2B2CD060659B23D0CCD8 /* IBMSwiftSDKCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18E540E9C4DDE9EA4E6A07C4E656F2F0 /* CustomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9C35B8A94392164D237C0E4384670 /* CustomModel.swift */; };
+		1AE06CDF3D1A3E7A2396C90F03D05A6F /* RecognitionJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AA461EB5864A165F0E3C1B45F2254 /* RecognitionJobs.swift */; };
+		1D3FD2BD6DEAABDD2F4D86ECE375AFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		1DA88120EA3FD6C1208A977CB2B9848D /* WordConfidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE127BB764E968038BED9D8CFB5C8317 /* WordConfidence.swift */; };
+		213C059ED690578660589D54ACDAB5B1 /* WAVRepair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B4E4FC689DD5AB4B35AC3B1C8632D /* WAVRepair.swift */; };
+		22CE5D82739AEE7463086EF22194CAE7 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = B14D5F7576845CBBE0690301E7A1106F /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F90E37AE4FDA049BE97B789B87693A /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F248E76D521A165842825FFDCC57907B /* Framer.swift */; };
+		2667CEA9179782A3051634C099591DC2 /* opus_header.c in Sources */ = {isa = PBXBuildFile; fileRef = 73B2FC43B2A6B7DE0C2705B5FDFF3DAE /* opus_header.c */; };
+		26785BDE8B70387A32A9379A8B246AD8 /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D05844291CFA83BE9C33153C973EE4D /* IBMWatsonTextToSpeechV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C7EF41A2434123D91DCC73099B0D79 /* SpeechRecognitionResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C2C44C74F8E719203B157916C88A0 /* SpeechRecognitionResults.swift */; };
+		2A182643D55A64AEF52F268AE2820991 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF62D93209BBFF52DC3AE453A569D3 /* Word.swift */; };
+		2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B2DF584317CA136E0F1E1AF869C160 /* RestRequest.swift */; };
+		2BF93E18012690CDAA5C75B80650D2A6 /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956C7E9575138E806215B8B7BC0A9909 /* Pronunciation.swift */; };
+		2C681C63861AAB0B43E8BE26F566B1CE /* SupportedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F09E97F423F83AA63C2C68802F866 /* SupportedFeatures.swift */; };
+		2D0E115FFBA681D663D89F1E04D6C071 /* IBMWatsonLanguageTranslatorV3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5BFB35F9BDCE6C0BF28B5EDBF6F311 /* IBMWatsonLanguageTranslatorV3-dummy.m */; };
+		2E8E23D04A09946D21940F4A11027FA0 /* DeleteModelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946D93B1AF4A11D625DC33765EFEF5C8 /* DeleteModelResult.swift */; };
+		2EEFF088C1205E6C09F2F96F2DB51CEB /* IdentifiedLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07213E821C02BF30C9EFDD7474DD0D35 /* IdentifiedLanguage.swift */; };
+		308CC373FA5EE43A64BC7466947A8129 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8EF4CB4ECF03D74D13F384885C98F8 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30AF1CF14B524F7B10FBC4F3E100E00A /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636B63AFBB4FD5C8F2CE6EE3B4A4F01 /* Words.swift */; };
+		311419894F289D845C5537DA682EE17B /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C813B9885AE8BBE7C657658E1E59810 /* InsecureConnection.swift */; };
+		32CC03BB71DFA440860C5619E38F86C0 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9764E87308100953A70052F6DA9D945 /* IBMSwiftSDKCore.framework */; };
+		33E8748718ABB69614A14FEBF59093F7 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = B0AC64E09C87A94639A286F86349E1B9 /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FEE370E06A8209BAF73451ECE72148 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83106F8868BE9FCD44F4AEACAA7ADB /* TextToSpeech.swift */; };
+		37EBDDDA92D24A735C26CD1D8C89F495 /* SpeechModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB455304EA4ED1BDCF9F6D69B7C4B8A8 /* SpeechModel.swift */; };
+		3BF746BEEAE388D45D0733365F7A167A /* Corpora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE8A6C8C0B822FA39DB53C13EB60A5 /* Corpora.swift */; };
+		3CE0153EC1B72724C2C31EF87F70A249 /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41ACA6920F5361CFE22DBEE37F537 /* FoundationHTTPHandler.swift */; };
+		3DF36AD2EFF90C9036DFDAE2C8C9142C /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF093F6E69CF990AA46D310B53A00F3B /* Security.swift */; };
+		408ACE5CB5C3B8C904271BE3F21FCCB2 /* AudioMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1845570181B6701E313C5F1DC73E7B /* AudioMetrics.swift */; };
+		43745AFA4CBD43D3BC7FD9C1A9629646 /* SpeechToTextSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD410E9682AFB084DDD92281C58147D /* SpeechToTextSocket.swift */; };
+		4410FA9172805B0FFAC65B1C6299884D /* WordTimestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B58A0F8449FA0889DDFE1465BC145A /* WordTimestamp.swift */; };
+		445B3A0C75E447B9BE6CDFF2734068B2 /* SpeechToTextSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360152C60D0EDB79269B9B49F002305 /* SpeechToTextSession.swift */; };
+		46DD08FB7D6071E99E75ECDBA47E90C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5818AC34B96AABD34EA24A5B18309F68 /* UIKit.framework */; };
+		48391F8F999C002E020D899522646499 /* SpeechRecognitionAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318F566CF0D8B0D336EE3BC8DD605F95 /* SpeechRecognitionAlternative.swift */; };
+		4B2F0EA0361EB614F71CA2B3A70DAE3B /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2138DBFF56647D2E97D2B9CEBC706 /* Voice.swift */; };
+		4BEA7B89139FCD2BC124408842859A55 /* DocumentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E93BA5D7D168F4732510A0F36FF42C3 /* DocumentList.swift */; };
+		4DB92BD27B1C326253A19E848E60726A /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5528BABE7B4164D3BACAEA6AD233FA48 /* WSCompression.swift */; };
+		4E84F60A40049AE3156DEFB2A806769B /* TextToSpeechDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043083A03C283E3CD00787D3FC3EB20B /* TextToSpeechDecoder.swift */; };
+		4F028355FE9EB8A88520CE38A7FAE72B /* RegisterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6735C24F249C83C03BA743932780E269 /* RegisterStatus.swift */; };
+		51B75A9881BA8938065AF9B376F43131 /* IBMWatsonSpeechToTextV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D8F6E022A4E8CB13B7E996E96F7DE /* IBMWatsonSpeechToTextV1-dummy.m */; };
+		5586733EB318E2EBC979929E31E36F8A /* opus_header.h in Headers */ = {isa = PBXBuildFile; fileRef = EF993BA189F8A034BF18A70962271A85 /* opus_header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D190814595FDA52586A70531D5BD71 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131969942AE4E286C47B98EB61ACABAA /* WebSocket.swift */; };
+		58BCECD99BBAAB8F95EDA367DE740E45 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9764E87308100953A70052F6DA9D945 /* IBMSwiftSDKCore.framework */; };
+		59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53F30CA9554E43E8AEC4816D00C416 /* CloudPakForDataAuthenticator.swift */; };
+		59BD93AC2965588B8D0420F5CCDC74F0 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91CB5F8D17E0C68C21D90319D94700D /* WebSocketServer.swift */; };
+		5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9215C0F90BACEA897DAA8D102C10239 /* MultipartFormData.swift */; };
+		5EE4DB9B219DCBC6399A4B0AC7B14B18 /* AudioResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA7F443DD50EE66932F3A88B050C70 /* AudioResource.swift */; };
+		5F295BA22CDCD69B6BD499577C06562D /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = D219ECDC1036504C915BCEB08CE73776 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F8D1AF4DECE7871B47AEAECEA4572B2 /* SpeechToTextState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFF06957AE9A19568C306DA39647AC /* SpeechToTextState.swift */; };
+		62A6D6277C84AD0AB8ECD666D62C1E56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C2249AEAC373C61FF82580A63494E /* IBMSwiftSDKCore-dummy.m */; };
+		65992668D051277A55EC8E2A18FB931B /* IBMWatsonLanguageTranslatorV3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FBB4E7782009436AAAFD7831A45C09 /* IBMWatsonLanguageTranslatorV3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		661EED58B7533F00167189E89821E383 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F7770FDD8A2892A44949CCC83285A4 /* Shared.swift */; };
+		6762724102132C861217B911E70056ED /* iOSDropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 278DD81624B7C841A8BDA6105A572AE0 /* iOSDropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6993E33BF849B2114932CA289525E221 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3DA1C6722F0F599E8E5E410A915302 /* Data+Extensions.swift */; };
+		69C24DD8EED8BAF281FA373305D26168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		6AB5BD38EBAA70F49E5AB179DC9D5B6F /* LanguageTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2680FC790C8845E85C54D245C9618 /* LanguageTranslator.swift */; };
+		6ADFB626C34AA35AC883469526699F8D /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BAAFA944D80BDAF5362FF032367800 /* iOSDropDown.swift */; };
+		6CD58664D1AAF240A4FEF6AAB0CF4404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		6E0F94F0BDAAE08D2F096BBD5B40B530 /* AcousticModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64800811001A026C79C2E5261FE01979 /* AcousticModels.swift */; };
+		6F467B397209860923FECAB25D665CEC /* AudioMetricsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469353E61F641B25E7AB38CAB9D913C /* AudioMetricsDetails.swift */; };
+		6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E2F5DB16027C625F73472F7B3B507F /* InsecureConnection.swift */; };
+		71E9FD8C5000E94B6614EEC29055A8AE /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6B15A2C2772A0AE012AC66DD836C1 /* FoundationHTTPServerHandler.swift */; };
+		7205FDE4DDC8C987A9CA3E7309C8177F /* IdentifiableLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1551519512D828EDDDF57183BAF8CF0 /* IdentifiableLanguage.swift */; };
+		728A1F1A064BCF2A8CCF21D2E810B1DC /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BF8BCD87597F62538127C336343E4F /* Engine.swift */; };
+		76254230A99D8AE72320C62F3B06F7A8 /* TranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AA4A1082A95358E98E99A57B347404 /* TranslationModel.swift */; };
+		764171CF43AA317DAD7750BC7671E4F8 /* Pods-Speech Translator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C8C9C8EBB058FF92ECF2154D12556D /* Pods-Speech Translator-dummy.m */; };
+		77009D7E9862261A86027A20476B9DF2 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = BA561DB14DDB3FB66C017785FFCFD83D /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0DC53D0FAA5955DB9AF3C39421B03 /* JWT.swift */; };
+		79665C350ECC27F5E7F05B12000CA5E6 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B945C1985C1352BFA59EA8AEEC37E48 /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C18EBC8417FC957F1E559256A36CD36 /* SupportedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6BB7A6088AD611BCAB80F65B3898AC /* SupportedFeatures.swift */; };
+		7E921DB0F2F2CF67CB0350B3E0A1831C /* IdentifiedLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739FFDF5795688E57DC163B751FCAEF7 /* IdentifiedLanguages.swift */; };
+		8008152C269A909A95FEB5AB079167E3 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9EEFE9A5E3879EF86DFC9CAB8D7D72 /* Translation.swift */; };
+		80C209C7FA5C7B4A9C055787C6241D64 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DE327F13350D7E22188C05CF9CFCA2 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759D63A1D0FC233BA77A1DD7AFF2EF7 /* RestResponse.swift */; };
+		86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE2AF527B43A38D33B7C8F49C66817 /* Authentication.swift */; };
+		8735EE64F55A8CAD4237B0FEEB0B5B69 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67C1F864D495DE9EFB5756CBA9B9888 /* LanguageModel.swift */; };
+		891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1104116E8DE6FA6920EB63957153A /* ConfigBasedAuthenticatorFactory.swift */; };
+		8AE2E5E92206C6ACAA232325C784B3FA /* IdentifiableLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C709D6417F10408CCCEAEA4D5A65FF /* IdentifiableLanguages.swift */; };
+		91B6BAC8393A672A8EBCC07E67CF2670 /* SpeechToText+Recognize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BAEA781E2BF7CD9E89196CD61E12B0 /* SpeechToText+Recognize.swift */; };
+		93479FDF731A881E34A4139C880B8E6C /* AcousticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B616EF73E4EC85F53CB4EC407BB1C /* AcousticModel.swift */; };
+		94A3659702D0A5C712DAFC6E23695DF9 /* SpeechToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5418DC8BCA9A092A62F6E05791070CA8 /* SpeechToText.swift */; };
+		94DFC979AC9D61935D7C52821324C976 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BCCFEC93A6A06A593E842AF49F3671 /* Transport.swift */; };
+		968F98CDDCC95F21A0309247A9A1A05C /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EF327DFD5EFFD6157ED0DE462028C4 /* FoundationSecurity.swift */; };
+		96C8E0D2BC13952BD8DF2849BC4FB914 /* SpeechRecognitionResultsAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFB0964E67F1A20F10FCD788D076A61 /* SpeechRecognitionResultsAccumulator.swift */; };
+		9797AAFC91374A971DD1DB51A2ABF6BB /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBB097A0FEB91CFFBBACFA30CC0113 /* Translation.swift */; };
+		97E33EFDA1F7FF563168A39433F0D10D /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3371F00803DA482D6B61C95CF32B384 /* StringHTTPHandler.swift */; };
+		9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB314083527AA63FE9086921249C5745 /* RestError.swift */; };
+		9B85D5741AAF53EE3FB0B83CC375B96D /* AudioDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB45DAAC12ACB62D83DE757D4CC21F /* AudioDetails.swift */; };
+		9BDD4010EC4EBA261FBA53E6BFCE69BC /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE265B20B4A28D390ECB9A4329C21824 /* Server.swift */; };
+		A06D1F24843ABAE7523ED91DCE86F8BF /* AudioResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5F6E1CF26A07F9CE473832D176CC81 /* AudioResources.swift */; };
+		A2BA09A91052C6026399ACCE45A6207B /* DocumentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B1A02D37B2CAC8B4D42500F13857E8 /* DocumentStatus.swift */; };
+		A33EB3970739A73390F638CB7AC827E7 /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCD061EFBBA77EEB2A36A0E4C6DA6B0 /* Grammar.swift */; };
+		A3491D7A07F44244D2158BCA31314E71 /* TranslationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7264D784F48822001BCED00B110957 /* TranslationResult.swift */; };
+		A46519968DC2FEA8D7602F59B226D76C /* ProcessingMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3ECBC8F2A3C6D95D46EF3C292DB5D4 /* ProcessingMetrics.swift */; };
+		A4D604276B2C52CFBCCB56A73486C03D /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C5248D6A35E9C816D8FF462407BCB3 /* FrameCollector.swift */; };
+		A532272BB88A456EF3CEB0CAEDCD3D81 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = A5DE18D1814A0D133E092FB14BC315D3 /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6807FF2A51826C0819B0D8AF66A46DA /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469780F26DF87F2F626CAF548FD3C79C /* Starscream.framework */; };
+		A707BB7026735BFE5CFAF7ACD20250C5 /* TrainingWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AE8C1EBABCB32429C755486A0CD9A5 /* TrainingWarning.swift */; };
+		AA5C3CFCB327C3CE7CDA397AFF7CE499 /* WordAlternativeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953A66FB865C6D2CF75EC8023D7AEB9 /* WordAlternativeResult.swift */; };
+		AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC11C51DF06191861C21D2201C773CB /* IAMAuthenticator.swift */; };
+		ACAF56A4EDCF29ADA55009B72D74CA68 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08902457C3B95BF7091D1881EC080D4D /* Languages.swift */; };
+		AE834DA6C03CBFC0D3B241F11A3FCF55 /* SpeakerLabelsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755FE8A67F713CEFC33FF987EE9A3FE3 /* SpeakerLabelsResult.swift */; };
+		B233223E4AF19EF80B2D93B577125D8B /* WordAlternativeResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1944C074894495E7C1DD6BD13146A03 /* WordAlternativeResults.swift */; };
+		B26A4D3C8813ABAB72F1FBD79CB656C8 /* IBMWatsonSpeechToTextV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 667F787A7C47545FFC4220CEA2242361 /* IBMWatsonSpeechToTextV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53DB3786E78BF0DDF783F844D7F61CF /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A07C1168643EEF50A4490FA2E2B1686 /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B55E48DDDBE846C7FF4A4CA23AF82226 /* SpeechToTextEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2706B6C052BFCE4641A973C2003CEF /* SpeechToTextEncoder.swift */; };
+		B74EA4AC479CBAFAEAEDCFA8AFC27B85 /* Grammars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009C0D2940C445D9BFD96F7CEB443F06 /* Grammars.swift */; };
+		B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3400987A4AFC69A431C2CCFF792F27D /* CodableExtensions.swift */; };
+		BD7D003AF1715708442206660E6A5710 /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6658A08C59480D6BE59BFBBCA399C077 /* NativeEngine.swift */; };
+		BE384A1DEBD232CC0BD279AE5E9474B6 /* RecognitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170EB1A87873951F6CAEBC0084F7E561 /* RecognitionState.swift */; };
+		BFE980A3BF9F560772249EBA6CD4839D /* AudioListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C604E70B7F84DCB6A5DC26219CA708F /* AudioListing.swift */; };
+		C312131E6526BFB7C1CB92D93D58FCC7 /* iOSDropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D872FE52573AE4ABA6D344D45974DD9 /* iOSDropDown-dummy.m */; };
+		C37EA631C3F88C79DFB75D383B90CECE /* AudioMetricsHistogramBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD77888DAC1172848E39CE1E1910609 /* AudioMetricsHistogramBin.swift */; };
+		C7FE2E6F1917F2557BC9FF842FB25C11 /* RecognitionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB252AD442E988ADD24D92EFBD9F208 /* RecognitionSettings.swift */; };
+		C8B1EF450E66AC2BC958BFE3F9DE7B52 /* IBMSwiftSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9764E87308100953A70052F6DA9D945 /* IBMSwiftSDKCore.framework */; };
+		C8D48DC67D1EF83CC85E3EF245748E93 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6766274A0C46BB22A5DDA6DDB00721 /* Language.swift */; };
+		CAF1EBD93278EF3CD648C5D5E2DB8A97 /* SpeechModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D1AD0436E908DF9513251F6A0F468 /* SpeechModels.swift */; };
+		CB547054FAF87685CDAF09BA017CC163 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B6EF0E108CFBFFB1D1D62355E3DC5A /* InsecureConnection.swift */; };
+		CC2783C287FEDE70B95CA81C5893EA3C /* TrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE17E923EFD2DA1F43F0219065CF0AA /* TrainingResponse.swift */; };
+		CDE2FD159B470EC9DEF55E74BB4EABFD /* WordError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5E0608D97A9590F0130443C01CA39D /* WordError.swift */; };
+		CF78FDA455A34AEC2E21EFCA8754DB63 /* KeywordResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C7CE23E460ACC246F478904C848F0 /* KeywordResult.swift */; };
+		D2AEB41458DD0915842D472AF889C8E4 /* Corpus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491AC06E89AFC2FD839EBD5E7373863C /* Corpus.swift */; };
+		D2EF46CAC2F7F0D0516299C8BB62EF79 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D7DE98D69A6411103957F1BBDCA5BB /* Words.swift */; };
+		D464F1179583F0E62471B9B88DFC4B75 /* TranslationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94A8D1ED82E429F22D38B7D605E7277 /* TranslationModels.swift */; };
+		D51B1E7EC00C2198E69CEB8BD02ECAEF /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = B507AA55EBE6256863C603B18ABC6E6A /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6878F4B2CA098618AAA45BD759324E4 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD22BE29A1BF4398535F278223EA3 /* InsecureConnection.swift */; };
+		D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E525BC287B3B9EC35FDA6F1EA1654D44 /* JSON.swift */; };
+		DF7797A22540146D25EC960E13E8BD58 /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D051673D80BF43E2489CB168ED9FBAF /* HTTPHandler.swift */; };
+		E1A238655E0F61D2FEF33FA409C80B98 /* RecognitionStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5D6460F84FEA3742650175E1E2EC0 /* RecognitionStop.swift */; };
+		E1A9A8D8A30E7B1170B2DCF5A5ED2F08 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 359216B052E3C72550184998F7B3339F /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2E99E797FB0191095CDA6E0BBFA671D /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21081F4718BE512170D3F4C7D7E69D /* Shared.swift */; };
+		E5A15DC34F37FAC6C0D0E377CD1C6E78 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 885647330AB47E71FB689E340D72055A /* IBMWatsonTextToSpeechV1-dummy.m */; };
+		E917A8FF7860877AF65A6F7657C8DD75 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAC7B01C97309B9B04D99F5D31395AA /* Starscream-dummy.m */; };
+		EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		EB04532171415A89B2BE88BF039C4DF6 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 8801EE601537C6A6E3F0EF61E8D5A197 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB35D984E24DFB41A15AABD6EE4651BE /* Voices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818F1BC4385FED02834595C9DCA230BB /* Voices.swift */; };
+		F0116F78D2FBD9EB30C24A6C53DB16D9 /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E865FC7FCDC021C100ED3E0E4821160 /* FoundationTransport.swift */; };
+		F433BF3DE029D5509A9D208FE2F3687E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		F477273303E93FC74FE705F8602E203E /* CustomModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E23474DA347F1F9CE647362002E2 /* CustomModels.swift */; };
+		F56F71484AA48DC4C05C3C389CC7F153 /* RecognitionJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D54DFF7D9C298A16F1DFFB3A1E292 /* RecognitionJob.swift */; };
+		F6709B2999D937D9154E673090612C83 /* CustomWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF67B4842258BC370FBFB9C1C806BBFF /* CustomWord.swift */; };
+		F7757D1B90A012586A8BAE599C190933 /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6E22F2F7615F0D4ACC80CE7D1645EF /* WSEngine.swift */; };
+		F778448E9143C511E67C833E49F2AD8C /* RecognizeCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A1D8A0043602738CC864B28C2B693 /* RecognizeCallback.swift */; };
+		F947B92294D94EDD4C11743EB7D83A58 /* LanguageModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FBB1FB0D4941491BF75647849FF6A1 /* LanguageModels.swift */; };
+		F9587B565B34E2A2059024545AAE35DA /* SpeechToTextRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB85D0EB0072C19AF43BA2E5CF50C5DF /* SpeechToTextRecorder.swift */; };
+		FB1A59DAD92E574036C966A2CD221FAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */; };
+		FB7157EDEFF8F06C207EC418C6233348 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A19C30E547A138949C27ED022733B /* Compression.swift */; };
+		FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C6CB378393D206F3CDE406393B0907 /* CredentialUtils.swift */; };
+		FEA0BC6A5C1F17423DC51B81E0FB67AF /* SpeechRecognitionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090E9EAB3B8C550F313171F71F060AA9 /* SpeechRecognitionResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AA3758F9FA790F3C6989AA9A5C17F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		5B9AA17DE9949E968BA582C958DAF1C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2B724283F9BE15AC7375A6203787C69;
+			remoteInfo = IBMWatsonLanguageTranslatorV3;
+		};
+		5F03AEFC377E28C3CCF0B0B6795486FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		72AD2B5D3C1D415B35BD63BC43DD143C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		AA68F5231A760DC2EE1E291F3B037024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		AE874BEAB0D76D1ECB62BE4DCE6D0050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C76CE6CD60B1CE55A174F03CC59AE17;
+			remoteInfo = iOSDropDown;
+		};
+		CC37260F6D7B9E662C0514E8D35FA096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		CC6198762B1A44FA02D149A173CEA9A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C212BBFAF6FC8270BF5BEF8057998E30;
+			remoteInfo = IBMSwiftSDKCore;
+		};
+		D0A7082962EA13B9B37F9CAC43128337 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85F80CBB88E15EBEE7535E1C6ED1B185;
+			remoteInfo = IBMWatsonSpeechToTextV1;
+		};
+		E41BC573B34461E098AF17A31870282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C8766A76CF406E4C2FDDF51E397DC3;
+			remoteInfo = IBMWatsonTextToSpeechV1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009C0D2940C445D9BFD96F7CEB443F06 /* Grammars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grammars.swift; path = Sources/SpeechToTextV1/Models/Grammars.swift; sourceTree = "<group>"; };
+		043083A03C283E3CD00787D3FC3EB20B /* TextToSpeechDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechDecoder.swift; path = Sources/TextToSpeechV1/TextToSpeechDecoder.swift; sourceTree = "<group>"; };
+		07213E821C02BF30C9EFDD7474DD0D35 /* IdentifiedLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiedLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiedLanguage.swift; sourceTree = "<group>"; };
+		07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeechToText.framework; path = IBMWatsonSpeechToTextV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08902457C3B95BF7091D1881EC080D4D /* Languages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Languages.swift; path = Sources/LanguageTranslatorV3/Models/Languages.swift; sourceTree = "<group>"; };
+		090E9EAB3B8C550F313171F71F060AA9 /* SpeechRecognitionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResult.swift; path = Sources/SpeechToTextV1/Models/SpeechRecognitionResult.swift; sourceTree = "<group>"; };
+		0B6BB7A6088AD611BCAB80F65B3898AC /* SupportedFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedFeatures.swift; path = Sources/TextToSpeechV1/Models/SupportedFeatures.swift; sourceTree = "<group>"; };
+		0C6766274A0C46BB22A5DDA6DDB00721 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Sources/LanguageTranslatorV3/Models/Language.swift; sourceTree = "<group>"; };
+		0F5E0608D97A9590F0130443C01CA39D /* WordError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordError.swift; path = Sources/SpeechToTextV1/Models/WordError.swift; sourceTree = "<group>"; };
+		108455A9152EBECB6052A1B0B8E8FD21 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonLanguageTranslatorV3.debug.xcconfig; sourceTree = "<group>"; };
+		131969942AE4E286C47B98EB61ACABAA /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		13D7DE98D69A6411103957F1BBDCA5BB /* Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Words.swift; path = Sources/SpeechToTextV1/Models/Words.swift; sourceTree = "<group>"; };
+		140E273391B381C02B43E3BAF2FF5D14 /* Pods-Speech Translator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Speech Translator.debug.xcconfig"; sourceTree = "<group>"; };
+		1469353E61F641B25E7AB38CAB9D913C /* AudioMetricsDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetricsDetails.swift; path = Sources/SpeechToTextV1/Models/AudioMetricsDetails.swift; sourceTree = "<group>"; };
+		170EB1A87873951F6CAEBC0084F7E561 /* RecognitionState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionState.swift; path = Sources/SpeechToTextV1/WebSockets/RecognitionState.swift; sourceTree = "<group>"; };
+		18710C1089D8926627D7F13940497A45 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		1953A66FB865C6D2CF75EC8023D7AEB9 /* WordAlternativeResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordAlternativeResult.swift; path = Sources/SpeechToTextV1/Models/WordAlternativeResult.swift; sourceTree = "<group>"; };
+		1A1585B9B62FE0B7BD1C4B91E9340957 /* IBMSwiftSDKCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMSwiftSDKCore.modulemap; sourceTree = "<group>"; };
+		1AF6B15A2C2772A0AE012AC66DD836C1 /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		1B53F30CA9554E43E8AEC4816D00C416 /* CloudPakForDataAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudPakForDataAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/CloudPakForDataAuthenticator.swift; sourceTree = "<group>"; };
+		1C604E70B7F84DCB6A5DC26219CA708F /* AudioListing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioListing.swift; path = Sources/SpeechToTextV1/Models/AudioListing.swift; sourceTree = "<group>"; };
+		1D872FE52573AE4ABA6D344D45974DD9 /* iOSDropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDropDown-dummy.m"; sourceTree = "<group>"; };
+		1E1845570181B6701E313C5F1DC73E7B /* AudioMetrics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetrics.swift; path = Sources/SpeechToTextV1/Models/AudioMetrics.swift; sourceTree = "<group>"; };
+		1ED2680FC790C8845E85C54D245C9618 /* LanguageTranslator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageTranslator.swift; path = Sources/LanguageTranslatorV3/LanguageTranslator.swift; sourceTree = "<group>"; };
+		2030B54603A542495A53C5260704CCC0 /* IBMWatsonSpeechToTextV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonSpeechToTextV1.modulemap; sourceTree = "<group>"; };
+		22EF327DFD5EFFD6157ED0DE462028C4 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		278DD81624B7C841A8BDA6105A572AE0 /* iOSDropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-umbrella.h"; sourceTree = "<group>"; };
+		27C70FA013AABE5DD45A2577D7428E82 /* IBMWatsonTextToSpeechV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonTextToSpeechV1-Info.plist"; sourceTree = "<group>"; };
+		2EB192B7CF3F9BEB8CC5D872815F5743 /* Pods-Speech Translator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Speech Translator-acknowledgements.plist"; sourceTree = "<group>"; };
+		310C2C44C74F8E719203B157916C88A0 /* SpeechRecognitionResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResults.swift; path = Sources/SpeechToTextV1/Models/SpeechRecognitionResults.swift; sourceTree = "<group>"; };
+		318F566CF0D8B0D336EE3BC8DD605F95 /* SpeechRecognitionAlternative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionAlternative.swift; path = Sources/SpeechToTextV1/Models/SpeechRecognitionAlternative.swift; sourceTree = "<group>"; };
+		328B616EF73E4EC85F53CB4EC407BB1C /* AcousticModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticModel.swift; path = Sources/SpeechToTextV1/Models/AcousticModel.swift; sourceTree = "<group>"; };
+		359216B052E3C72550184998F7B3339F /* os_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = Sources/SupportingFiles/Dependencies/Source/os_types.h; sourceTree = "<group>"; };
+		36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextToSpeech.framework; path = IBMWatsonTextToSpeechV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A949E7AE686A2364991FD8DBAE2F35A /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		3B7D8F6E022A4E8CB13B7E996E96F7DE /* IBMWatsonSpeechToTextV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonSpeechToTextV1-dummy.m"; sourceTree = "<group>"; };
+		3B945C1985C1352BFA59EA8AEEC37E48 /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = Sources/SupportingFiles/Dependencies/Source/opus_types.h; sourceTree = "<group>"; };
+		3C813B9885AE8BBE7C657658E1E59810 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		3CE41ACA6920F5361CFE22DBEE37F537 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		3E93BA5D7D168F4732510A0F36FF42C3 /* DocumentList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentList.swift; path = Sources/LanguageTranslatorV3/Models/DocumentList.swift; sourceTree = "<group>"; };
+		41BAAFA944D80BDAF5362FF032367800 /* iOSDropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iOSDropDown.swift; path = iOSDropDown/Classes/iOSDropDown.swift; sourceTree = "<group>"; };
+		449B4E4FC689DD5AB4B35AC3B1C8632D /* WAVRepair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WAVRepair.swift; path = Sources/TextToSpeechV1/WAVRepair.swift; sourceTree = "<group>"; };
+		44B1A02D37B2CAC8B4D42500F13857E8 /* DocumentStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentStatus.swift; path = Sources/LanguageTranslatorV3/Models/DocumentStatus.swift; sourceTree = "<group>"; };
+		469780F26DF87F2F626CAF548FD3C79C /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46AF3E394BDF7E2E7B9E1B06153785FD /* IBMWatsonSpeechToTextV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonSpeechToTextV1.debug.xcconfig; sourceTree = "<group>"; };
+		4759D63A1D0FC233BA77A1DD7AFF2EF7 /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/IBMSwiftSDKCore/RestResponse.swift; sourceTree = "<group>"; };
+		491AC06E89AFC2FD839EBD5E7373863C /* Corpus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Corpus.swift; path = Sources/SpeechToTextV1/Models/Corpus.swift; sourceTree = "<group>"; };
+		4B0552199BF1018495982D387AC5E2BD /* Pods-Speech Translator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Speech Translator-frameworks.sh"; sourceTree = "<group>"; };
+		4BDFF06957AE9A19568C306DA39647AC /* SpeechToTextState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextState.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextState.swift; sourceTree = "<group>"; };
+		4CAB45DAAC12ACB62D83DE757D4CC21F /* AudioDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioDetails.swift; path = Sources/SpeechToTextV1/Models/AudioDetails.swift; sourceTree = "<group>"; };
+		4E41FEF16350CDD2381EB6315E33E9EC /* IBMWatsonTextToSpeechV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-prefix.pch"; sourceTree = "<group>"; };
+		4E5BFB35F9BDCE6C0BF28B5EDBF6F311 /* IBMWatsonLanguageTranslatorV3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonLanguageTranslatorV3-dummy.m"; sourceTree = "<group>"; };
+		4E865FC7FCDC021C100ED3E0E4821160 /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		502D54DFF7D9C298A16F1DFFB3A1E292 /* RecognitionJob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionJob.swift; path = Sources/SpeechToTextV1/Models/RecognitionJob.swift; sourceTree = "<group>"; };
+		51AE8C1EBABCB32429C755486A0CD9A5 /* TrainingWarning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrainingWarning.swift; path = Sources/SpeechToTextV1/Models/TrainingWarning.swift; sourceTree = "<group>"; };
+		53A31B2D2D8779E02DDAA6BCDF7E03D0 /* IBMWatsonTextToSpeechV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonTextToSpeechV1.debug.xcconfig; sourceTree = "<group>"; };
+		5418DC8BCA9A092A62F6E05791070CA8 /* SpeechToText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToText.swift; path = Sources/SpeechToTextV1/SpeechToText.swift; sourceTree = "<group>"; };
+		5528BABE7B4164D3BACAEA6AD233FA48 /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		55D1F57CA88BD479375D7AD649760B13 /* Pods-Speech Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Speech Translator.release.xcconfig"; sourceTree = "<group>"; };
+		57BAEA781E2BF7CD9E89196CD61E12B0 /* SpeechToText+Recognize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SpeechToText+Recognize.swift"; path = "Sources/SpeechToTextV1/SpeechToText+Recognize.swift"; sourceTree = "<group>"; };
+		5818AC34B96AABD34EA24A5B18309F68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		591F9122EA187272C68AAE5F3D763AAA /* ProcessedAudio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessedAudio.swift; path = Sources/SpeechToTextV1/Models/ProcessedAudio.swift; sourceTree = "<group>"; };
+		5A3CF117D853897F48BFD9C9EDCE04AE /* IBMWatsonTextToSpeechV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonTextToSpeechV1.release.xcconfig; sourceTree = "<group>"; };
+		5B1F8D6CC2166B2F11B588272CF5F194 /* libopus_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus_tts.a; path = Sources/SupportingFiles/Dependencies/Libraries/libopus_tts.a; sourceTree = "<group>"; };
+		5DC11C51DF06191861C21D2201C773CB /* IAMAuthenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAMAuthenticator.swift; path = Sources/IBMSwiftSDKCore/Authentication/IAMAuthenticator.swift; sourceTree = "<group>"; };
+		5DCE8A6C8C0B822FA39DB53C13EB60A5 /* Corpora.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Corpora.swift; path = Sources/SpeechToTextV1/Models/Corpora.swift; sourceTree = "<group>"; };
+		60AA4A1082A95358E98E99A57B347404 /* TranslationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationModel.swift; path = Sources/LanguageTranslatorV3/Models/TranslationModel.swift; sourceTree = "<group>"; };
+		61B89F0360CE5CEEBABE1B4F37C6D32E /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		62FBB097A0FEB91CFFBBACFA30CC0113 /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = Sources/TextToSpeechV1/Models/Translation.swift; sourceTree = "<group>"; };
+		64800811001A026C79C2E5261FE01979 /* AcousticModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticModels.swift; path = Sources/SpeechToTextV1/Models/AcousticModels.swift; sourceTree = "<group>"; };
+		6658A08C59480D6BE59BFBBCA399C077 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		667F787A7C47545FFC4220CEA2242361 /* IBMWatsonSpeechToTextV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonSpeechToTextV1-umbrella.h"; sourceTree = "<group>"; };
+		66C8C9C8EBB058FF92ECF2154D12556D /* Pods-Speech Translator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Speech Translator-dummy.m"; sourceTree = "<group>"; };
+		66E2F5DB16027C625F73472F7B3B507F /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/IBMSwiftSDKCore/Authentication/InsecureConnection.swift; sourceTree = "<group>"; };
+		6735C24F249C83C03BA743932780E269 /* RegisterStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegisterStatus.swift; path = Sources/SpeechToTextV1/Models/RegisterStatus.swift; sourceTree = "<group>"; };
+		68B6EF0E108CFBFFB1D1D62355E3DC5A /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		695F04BC2FF85E07E64D088FC3B74BAD /* IBMSwiftSDKCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-prefix.pch"; sourceTree = "<group>"; };
+		6B00AEE3BEB1B0B29871CE598CC199D2 /* libogg_stt.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libogg_stt.a; path = Sources/SupportingFiles/Dependencies/Libraries/libogg_stt.a; sourceTree = "<group>"; };
+		6D051673D80BF43E2489CB168ED9FBAF /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		6E2706B6C052BFCE4641A973C2003CEF /* SpeechToTextEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextEncoder.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextEncoder.swift; sourceTree = "<group>"; };
+		71BF8BCD87597F62538127C336343E4F /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		739FFDF5795688E57DC163B751FCAEF7 /* IdentifiedLanguages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiedLanguages.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiedLanguages.swift; sourceTree = "<group>"; };
+		73B2FC43B2A6B7DE0C2705B5FDFF3DAE /* opus_header.c */ = {isa = PBXFileReference; includeInIndex = 1; name = opus_header.c; path = Sources/SupportingFiles/Dependencies/Source/opus_header.c; sourceTree = "<group>"; };
+		7452118E11541159AF253069C444C9C3 /* Pods_Speech_Translator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Speech_Translator.framework; path = "Pods-Speech Translator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		745A57064A4B3E626890A31F07BADEBF /* IBMSwiftSDKCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.release.xcconfig; sourceTree = "<group>"; };
+		74C78360C5112D25BE16F6A117B193DD /* libopus_stt.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus_stt.a; path = Sources/SupportingFiles/Dependencies/Libraries/libopus_stt.a; sourceTree = "<group>"; };
+		755FE8A67F713CEFC33FF987EE9A3FE3 /* SpeakerLabelsResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeakerLabelsResult.swift; path = Sources/SpeechToTextV1/Models/SpeakerLabelsResult.swift; sourceTree = "<group>"; };
+		76EB9EFBED46DC23B4050B420B48E08C /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		79F0DC53D0FAA5955DB9AF3C39421B03 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Sources/IBMSwiftSDKCore/Authentication/JWT.swift; sourceTree = "<group>"; };
+		7F3DA1C6722F0F599E8E5E410A915302 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		818F1BC4385FED02834595C9DCA230BB /* Voices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voices.swift; path = Sources/TextToSpeechV1/Models/Voices.swift; sourceTree = "<group>"; };
+		83C5248D6A35E9C816D8FF462407BCB3 /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
+		84A2138DBFF56647D2E97D2B9CEBC706 /* Voice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voice.swift; path = Sources/TextToSpeechV1/Models/Voice.swift; sourceTree = "<group>"; };
+		84F55F89F2364896451A88AB578AADE4 /* Pods-Speech Translator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Speech Translator-Info.plist"; sourceTree = "<group>"; };
+		8801EE601537C6A6E3F0EF61E8D5A197 /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Sources/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
+		885647330AB47E71FB689E340D72055A /* IBMWatsonTextToSpeechV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonTextToSpeechV1-dummy.m"; sourceTree = "<group>"; };
+		88EA7F443DD50EE66932F3A88B050C70 /* AudioResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioResource.swift; path = Sources/SpeechToTextV1/Models/AudioResource.swift; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D05844291CFA83BE9C33153C973EE4D /* IBMWatsonTextToSpeechV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-umbrella.h"; sourceTree = "<group>"; };
+		8DCD061EFBBA77EEB2A36A0E4C6DA6B0 /* Grammar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grammar.swift; path = Sources/SpeechToTextV1/Models/Grammar.swift; sourceTree = "<group>"; };
+		8E3ECBC8F2A3C6D95D46EF3C292DB5D4 /* ProcessingMetrics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProcessingMetrics.swift; path = Sources/SpeechToTextV1/Models/ProcessingMetrics.swift; sourceTree = "<group>"; };
+		8EFE2AF527B43A38D33B7C8F49C66817 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/IBMSwiftSDKCore/Authentication/Authentication.swift; sourceTree = "<group>"; };
+		8FF9C35B8A94392164D237C0E4384670 /* CustomModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomModel.swift; path = Sources/TextToSpeechV1/Models/CustomModel.swift; sourceTree = "<group>"; };
+		946D93B1AF4A11D625DC33765EFEF5C8 /* DeleteModelResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeleteModelResult.swift; path = Sources/LanguageTranslatorV3/Models/DeleteModelResult.swift; sourceTree = "<group>"; };
+		956C7E9575138E806215B8B7BC0A9909 /* Pronunciation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pronunciation.swift; path = Sources/TextToSpeechV1/Models/Pronunciation.swift; sourceTree = "<group>"; };
+		968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		96BCCFEC93A6A06A593E842AF49F3671 /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		9A07C1168643EEF50A4490FA2E2B1686 /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = Sources/SupportingFiles/Dependencies/Source/opus_defines.h; sourceTree = "<group>"; };
+		9A7264D784F48822001BCED00B110957 /* TranslationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationResult.swift; path = Sources/LanguageTranslatorV3/Models/TranslationResult.swift; sourceTree = "<group>"; };
+		9BD410E9682AFB084DDD92281C58147D /* SpeechToTextSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextSocket.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextSocket.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D9D1AD0436E908DF9513251F6A0F468 /* SpeechModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechModels.swift; path = Sources/SpeechToTextV1/Models/SpeechModels.swift; sourceTree = "<group>"; };
+		A1DE327F13350D7E22188C05CF9CFCA2 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		A36D4B001A2901234525A6E0F6206FD9 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		A3FBB4E7782009436AAAFD7831A45C09 /* IBMWatsonLanguageTranslatorV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonLanguageTranslatorV3-umbrella.h"; sourceTree = "<group>"; };
+		A5DE18D1814A0D133E092FB14BC315D3 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = Sources/SupportingFiles/Dependencies/Source/opus.h; sourceTree = "<group>"; };
+		A9215C0F90BACEA897DAA8D102C10239 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/IBMSwiftSDKCore/MultipartFormData.swift; sourceTree = "<group>"; };
+		AAAAD22BE29A1BF4398535F278223EA3 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Sources/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		AAFFC15FF4AD312DBDE1A5787E42D1B7 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		AB455304EA4ED1BDCF9F6D69B7C4B8A8 /* SpeechModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechModel.swift; path = Sources/SpeechToTextV1/Models/SpeechModel.swift; sourceTree = "<group>"; };
+		ADE27BC437A71984FCCBC9059DB395D9 /* IBMWatsonLanguageTranslatorV3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonLanguageTranslatorV3.modulemap; sourceTree = "<group>"; };
+		AE127BB764E968038BED9D8CFB5C8317 /* WordConfidence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordConfidence.swift; path = Sources/SpeechToTextV1/Models/WordConfidence.swift; sourceTree = "<group>"; };
+		AE83106F8868BE9FCD44F4AEACAA7ADB /* TextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeech.swift; path = Sources/TextToSpeechV1/TextToSpeech.swift; sourceTree = "<group>"; };
+		B0AC64E09C87A94639A286F86349E1B9 /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = Sources/SupportingFiles/Dependencies/Source/opus_multistream.h; sourceTree = "<group>"; };
+		B14D5F7576845CBBE0690301E7A1106F /* os_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = Sources/SupportingFiles/Dependencies/Source/os_types.h; sourceTree = "<group>"; };
+		B507AA55EBE6256863C603B18ABC6E6A /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = Sources/SupportingFiles/Dependencies/Source/opus_types.h; sourceTree = "<group>"; };
+		B6D3D857CBB96FC8B7888D65FEA20095 /* IBMWatsonTextToSpeechV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonTextToSpeechV1.modulemap; sourceTree = "<group>"; };
+		B7A2E23474DA347F1F9CE647362002E2 /* CustomModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomModels.swift; path = Sources/TextToSpeechV1/Models/CustomModels.swift; sourceTree = "<group>"; };
+		B7EB49F0C2452CA8B222D6F01475C43E /* iOSDropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.debug.xcconfig; sourceTree = "<group>"; };
+		B83F899E9DDE786176FBFDEBEE8CEB1E /* IBMWatsonSpeechToTextV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonSpeechToTextV1-Info.plist"; sourceTree = "<group>"; };
+		B91CB5F8D17E0C68C21D90319D94700D /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		B9E5D6460F84FEA3742650175E1E2EC0 /* RecognitionStop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionStop.swift; path = Sources/SpeechToTextV1/WebSockets/RecognitionStop.swift; sourceTree = "<group>"; };
+		BA561DB14DDB3FB66C017785FFCFD83D /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Sources/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
+		BB9EEFE9A5E3879EF86DFC9CAB8D7D72 /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = Sources/LanguageTranslatorV3/Models/Translation.swift; sourceTree = "<group>"; };
+		BC6663117C00FD4AFC3517EDE9FEA7C1 /* IBMSwiftSDKCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMSwiftSDKCore.debug.xcconfig; sourceTree = "<group>"; };
+		BC9C2249AEAC373C61FF82580A63494E /* IBMSwiftSDKCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMSwiftSDKCore-dummy.m"; sourceTree = "<group>"; };
+		BD019ED30B972F5BC9973DD196DF16C3 /* IBMWatsonLanguageTranslatorV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonLanguageTranslatorV3-Info.plist"; sourceTree = "<group>"; };
+		BD5F6E1CF26A07F9CE473832D176CC81 /* AudioResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioResources.swift; path = Sources/SpeechToTextV1/Models/AudioResources.swift; sourceTree = "<group>"; };
+		BDDF62D93209BBFF52DC3AE453A569D3 /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Sources/SpeechToTextV1/Models/Word.swift; sourceTree = "<group>"; };
+		BFD77888DAC1172848E39CE1E1910609 /* AudioMetricsHistogramBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMetricsHistogramBin.swift; path = Sources/SpeechToTextV1/Models/AudioMetricsHistogramBin.swift; sourceTree = "<group>"; };
+		C3371F00803DA482D6B61C95CF32B384 /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		C3FBB1FB0D4941491BF75647849FF6A1 /* LanguageModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModels.swift; path = Sources/SpeechToTextV1/Models/LanguageModels.swift; sourceTree = "<group>"; };
+		C67C1F864D495DE9EFB5756CBA9B9888 /* LanguageModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanguageModel.swift; path = Sources/SpeechToTextV1/Models/LanguageModel.swift; sourceTree = "<group>"; };
+		C6C709D6417F10408CCCEAEA4D5A65FF /* IdentifiableLanguages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiableLanguages.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiableLanguages.swift; sourceTree = "<group>"; };
+		C8287F367DCB2B2CD060659B23D0CCD8 /* IBMSwiftSDKCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMSwiftSDKCore-umbrella.h"; sourceTree = "<group>"; };
+		C94A8D1ED82E429F22D38B7D605E7277 /* TranslationModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationModels.swift; path = Sources/LanguageTranslatorV3/Models/TranslationModels.swift; sourceTree = "<group>"; };
+		C9764E87308100953A70052F6DA9D945 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D1E4384E2D628C3F41DE2F9E1D6AAD /* Pods-Speech Translator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Speech Translator-umbrella.h"; sourceTree = "<group>"; };
+		CAD1104116E8DE6FA6920EB63957153A /* ConfigBasedAuthenticatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigBasedAuthenticatorFactory.swift; path = Sources/IBMSwiftSDKCore/Authentication/ConfigBasedAuthenticatorFactory.swift; sourceTree = "<group>"; };
+		CB85D0EB0072C19AF43BA2E5CF50C5DF /* SpeechToTextRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextRecorder.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextRecorder.swift; sourceTree = "<group>"; };
+		CC2492543DF5AC457A8F9268BD3CE2E9 /* iOSDropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-prefix.pch"; sourceTree = "<group>"; };
+		CD6E22F2F7615F0D4ACC80CE7D1645EF /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
+		CD9F127F3438B124B6DE8216AE0EA6DD /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = Sources/SupportingFiles/Dependencies/Source/opus_multistream.h; sourceTree = "<group>"; };
+		CF093F6E69CF990AA46D310B53A00F3B /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		CFAC7B01C97309B9B04D99F5D31395AA /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		CFE17E923EFD2DA1F43F0219065CF0AA /* TrainingResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrainingResponse.swift; path = Sources/SpeechToTextV1/Models/TrainingResponse.swift; sourceTree = "<group>"; };
+		D12AA461EB5864A165F0E3C1B45F2254 /* RecognitionJobs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionJobs.swift; path = Sources/SpeechToTextV1/Models/RecognitionJobs.swift; sourceTree = "<group>"; };
+		D13D8ABC371DA31F38469FE734B64B1B /* iOSDropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSDropDown-Info.plist"; sourceTree = "<group>"; };
+		D219ECDC1036504C915BCEB08CE73776 /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = Sources/SupportingFiles/Dependencies/Source/opus_defines.h; sourceTree = "<group>"; };
+		D4C6CB378393D206F3CDE406393B0907 /* CredentialUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialUtils.swift; path = Sources/IBMSwiftSDKCore/CredentialUtils.swift; sourceTree = "<group>"; };
+		D68C7CE23E460ACC246F478904C848F0 /* KeywordResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeywordResult.swift; path = Sources/SpeechToTextV1/Models/KeywordResult.swift; sourceTree = "<group>"; };
+		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBMSwiftSDKCore.framework; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A82248C99DE97A52BFD2B84E74514D /* libogg_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libogg_tts.a; path = Sources/SupportingFiles/Dependencies/Libraries/libogg_tts.a; sourceTree = "<group>"; };
+		D9F7770FDD8A2892A44949CCC83285A4 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		DA21081F4718BE512170D3F4C7D7E69D /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		DA4A1D8A0043602738CC864B28C2B693 /* RecognizeCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizeCallback.swift; path = Sources/SpeechToTextV1/WebSockets/RecognizeCallback.swift; sourceTree = "<group>"; };
+		DA5585C8E4A827965003F57AB2C0B068 /* IBMSwiftSDKCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMSwiftSDKCore-Info.plist"; sourceTree = "<group>"; };
+		DB52CF0D5167D92EE71BA90A864B98F8 /* Pods-Speech Translator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Speech Translator.modulemap"; sourceTree = "<group>"; };
+		DE265B20B4A28D390ECB9A4329C21824 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
+		DF8EF4CB4ECF03D74D13F384885C98F8 /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = Sources/SupportingFiles/Dependencies/Source/opus.h; sourceTree = "<group>"; };
+		E07767287D1E34AFD9C180EA6BD9CCFC /* iOSDropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDropDown.modulemap; sourceTree = "<group>"; };
+		E1944C074894495E7C1DD6BD13146A03 /* WordAlternativeResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordAlternativeResults.swift; path = Sources/SpeechToTextV1/Models/WordAlternativeResults.swift; sourceTree = "<group>"; };
+		E3BF8EFB12AEFC1738FAD022265A29CF /* IBMWatsonLanguageTranslatorV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonLanguageTranslatorV3.release.xcconfig; sourceTree = "<group>"; };
+		E3D7D10F0F834FC67515A10528B12059 /* Pods-Speech Translator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Speech Translator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E525BC287B3B9EC35FDA6F1EA1654D44 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/IBMSwiftSDKCore/JSON.swift; sourceTree = "<group>"; };
+		E7A5439F865ED63CA46AA91223E05364 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
+		E82F09E97F423F83AA63C2C68802F866 /* SupportedFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedFeatures.swift; path = Sources/SpeechToTextV1/Models/SupportedFeatures.swift; sourceTree = "<group>"; };
+		E8A268976C57632FDEB4808475B5FF30 /* iOSDropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.release.xcconfig; sourceTree = "<group>"; };
+		EA93BDBBAA8F8FCE4F11C8A059026608 /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Sources/TextToSpeechV1/Models/Word.swift; sourceTree = "<group>"; };
+		EB314083527AA63FE9086921249C5745 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/IBMSwiftSDKCore/RestError.swift; sourceTree = "<group>"; };
+		EBFB0964E67F1A20F10FCD788D076A61 /* SpeechRecognitionResultsAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResultsAccumulator.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechRecognitionResultsAccumulator.swift; sourceTree = "<group>"; };
+		EF993BA189F8A034BF18A70962271A85 /* opus_header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_header.h; path = Sources/SupportingFiles/Dependencies/Source/opus_header.h; sourceTree = "<group>"; };
+		F1551519512D828EDDDF57183BAF8CF0 /* IdentifiableLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiableLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiableLanguage.swift; sourceTree = "<group>"; };
+		F248E76D521A165842825FFDCC57907B /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		F3400987A4AFC69A431C2CCFF792F27D /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/IBMSwiftSDKCore/CodableExtensions.swift; sourceTree = "<group>"; };
+		F360152C60D0EDB79269B9B49F002305 /* SpeechToTextSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextSession.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextSession.swift; sourceTree = "<group>"; };
+		F3B2DF584317CA136E0F1E1AF869C160 /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/IBMSwiftSDKCore/RestRequest.swift; sourceTree = "<group>"; };
+		F636B63AFBB4FD5C8F2CE6EE3B4A4F01 /* Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Words.swift; path = Sources/TextToSpeechV1/Models/Words.swift; sourceTree = "<group>"; };
+		F726CB0A5475D33973BA154AC3410473 /* IBMWatsonLanguageTranslatorV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonLanguageTranslatorV3-prefix.pch"; sourceTree = "<group>"; };
+		F9B58A0F8449FA0889DDFE1465BC145A /* WordTimestamp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordTimestamp.swift; path = Sources/SpeechToTextV1/Models/WordTimestamp.swift; sourceTree = "<group>"; };
+		FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LanguageTranslator.framework; path = IBMWatsonLanguageTranslatorV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSDropDown.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB252AD442E988ADD24D92EFBD9F208 /* RecognitionSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognitionSettings.swift; path = Sources/SpeechToTextV1/WebSockets/RecognitionSettings.swift; sourceTree = "<group>"; };
+		FDB565DB3BBBBE9C72DCCE85D2E046FB /* IBMWatsonSpeechToTextV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonSpeechToTextV1.release.xcconfig; sourceTree = "<group>"; };
+		FF1A19C30E547A138949C27ED022733B /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		FF67B4842258BC370FBFB9C1C806BBFF /* CustomWord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomWord.swift; path = Sources/SpeechToTextV1/Models/CustomWord.swift; sourceTree = "<group>"; };
+		FFAA5864EFF946085E249DAD7B661DD6 /* IBMWatsonSpeechToTextV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonSpeechToTextV1-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B019809A962AC2740D46F8890C437E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F433BF3DE029D5509A9D208FE2F3687E /* Foundation.framework in Frameworks */,
+				C8B1EF450E66AC2BC958BFE3F9DE7B52 /* IBMSwiftSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF5A9AC595EB65396B0F7FD3EC355F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1A59DAD92E574036C966A2CD221FAB /* Foundation.framework in Frameworks */,
+				46DD08FB7D6071E99E75ECDBA47E90C1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		579CB7596D00961B81C422D57DE83719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3FD2BD6DEAABDD2F4D86ECE375AFC4 /* Foundation.framework in Frameworks */,
+				58BCECD99BBAAB8F95EDA367DE740E45 /* IBMSwiftSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4B44AE2EB87B7E949CE6032A79AA43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D701EFD6375F09C0A65885F9624E61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A6D6277C84AD0AB8ECD666D62C1E56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B84B6196EE193DD43EB7EFBB1A722721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C24DD8EED8BAF281FA373305D26168 /* Foundation.framework in Frameworks */,
+				32CC03BB71DFA440860C5619E38F86C0 /* IBMSwiftSDKCore.framework in Frameworks */,
+				A6807FF2A51826C0819B0D8AF66A46DA /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF092CC1CC2B31BA076D15AEBF75D3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD58664D1AAF240A4FEF6AAB0CF4404 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0145886F2D15367B69CDC919383479F9 /* IBMWatsonSpeechToTextV1 */ = {
+			isa = PBXGroup;
+			children = (
+				328B616EF73E4EC85F53CB4EC407BB1C /* AcousticModel.swift */,
+				64800811001A026C79C2E5261FE01979 /* AcousticModels.swift */,
+				4CAB45DAAC12ACB62D83DE757D4CC21F /* AudioDetails.swift */,
+				1C604E70B7F84DCB6A5DC26219CA708F /* AudioListing.swift */,
+				1E1845570181B6701E313C5F1DC73E7B /* AudioMetrics.swift */,
+				1469353E61F641B25E7AB38CAB9D913C /* AudioMetricsDetails.swift */,
+				BFD77888DAC1172848E39CE1E1910609 /* AudioMetricsHistogramBin.swift */,
+				88EA7F443DD50EE66932F3A88B050C70 /* AudioResource.swift */,
+				BD5F6E1CF26A07F9CE473832D176CC81 /* AudioResources.swift */,
+				5DCE8A6C8C0B822FA39DB53C13EB60A5 /* Corpora.swift */,
+				491AC06E89AFC2FD839EBD5E7373863C /* Corpus.swift */,
+				FF67B4842258BC370FBFB9C1C806BBFF /* CustomWord.swift */,
+				8DCD061EFBBA77EEB2A36A0E4C6DA6B0 /* Grammar.swift */,
+				009C0D2940C445D9BFD96F7CEB443F06 /* Grammars.swift */,
+				AAAAD22BE29A1BF4398535F278223EA3 /* InsecureConnection.swift */,
+				D68C7CE23E460ACC246F478904C848F0 /* KeywordResult.swift */,
+				C67C1F864D495DE9EFB5756CBA9B9888 /* LanguageModel.swift */,
+				C3FBB1FB0D4941491BF75647849FF6A1 /* LanguageModels.swift */,
+				8801EE601537C6A6E3F0EF61E8D5A197 /* ogg.h */,
+				A5DE18D1814A0D133E092FB14BC315D3 /* opus.h */,
+				D219ECDC1036504C915BCEB08CE73776 /* opus_defines.h */,
+				CD9F127F3438B124B6DE8216AE0EA6DD /* opus_multistream.h */,
+				B507AA55EBE6256863C603B18ABC6E6A /* opus_types.h */,
+				B14D5F7576845CBBE0690301E7A1106F /* os_types.h */,
+				591F9122EA187272C68AAE5F3D763AAA /* ProcessedAudio.swift */,
+				8E3ECBC8F2A3C6D95D46EF3C292DB5D4 /* ProcessingMetrics.swift */,
+				502D54DFF7D9C298A16F1DFFB3A1E292 /* RecognitionJob.swift */,
+				D12AA461EB5864A165F0E3C1B45F2254 /* RecognitionJobs.swift */,
+				FDB252AD442E988ADD24D92EFBD9F208 /* RecognitionSettings.swift */,
+				170EB1A87873951F6CAEBC0084F7E561 /* RecognitionState.swift */,
+				B9E5D6460F84FEA3742650175E1E2EC0 /* RecognitionStop.swift */,
+				DA4A1D8A0043602738CC864B28C2B693 /* RecognizeCallback.swift */,
+				6735C24F249C83C03BA743932780E269 /* RegisterStatus.swift */,
+				DA21081F4718BE512170D3F4C7D7E69D /* Shared.swift */,
+				755FE8A67F713CEFC33FF987EE9A3FE3 /* SpeakerLabelsResult.swift */,
+				AB455304EA4ED1BDCF9F6D69B7C4B8A8 /* SpeechModel.swift */,
+				9D9D1AD0436E908DF9513251F6A0F468 /* SpeechModels.swift */,
+				318F566CF0D8B0D336EE3BC8DD605F95 /* SpeechRecognitionAlternative.swift */,
+				090E9EAB3B8C550F313171F71F060AA9 /* SpeechRecognitionResult.swift */,
+				310C2C44C74F8E719203B157916C88A0 /* SpeechRecognitionResults.swift */,
+				EBFB0964E67F1A20F10FCD788D076A61 /* SpeechRecognitionResultsAccumulator.swift */,
+				5418DC8BCA9A092A62F6E05791070CA8 /* SpeechToText.swift */,
+				57BAEA781E2BF7CD9E89196CD61E12B0 /* SpeechToText+Recognize.swift */,
+				6E2706B6C052BFCE4641A973C2003CEF /* SpeechToTextEncoder.swift */,
+				CB85D0EB0072C19AF43BA2E5CF50C5DF /* SpeechToTextRecorder.swift */,
+				F360152C60D0EDB79269B9B49F002305 /* SpeechToTextSession.swift */,
+				9BD410E9682AFB084DDD92281C58147D /* SpeechToTextSocket.swift */,
+				4BDFF06957AE9A19568C306DA39647AC /* SpeechToTextState.swift */,
+				E82F09E97F423F83AA63C2C68802F866 /* SupportedFeatures.swift */,
+				CFE17E923EFD2DA1F43F0219065CF0AA /* TrainingResponse.swift */,
+				51AE8C1EBABCB32429C755486A0CD9A5 /* TrainingWarning.swift */,
+				BDDF62D93209BBFF52DC3AE453A569D3 /* Word.swift */,
+				1953A66FB865C6D2CF75EC8023D7AEB9 /* WordAlternativeResult.swift */,
+				E1944C074894495E7C1DD6BD13146A03 /* WordAlternativeResults.swift */,
+				AE127BB764E968038BED9D8CFB5C8317 /* WordConfidence.swift */,
+				0F5E0608D97A9590F0130443C01CA39D /* WordError.swift */,
+				13D7DE98D69A6411103957F1BBDCA5BB /* Words.swift */,
+				F9B58A0F8449FA0889DDFE1465BC145A /* WordTimestamp.swift */,
+				6BE92B7AFD532A669291D1B83C6031AD /* Frameworks */,
+				8D6DB8672B2B7CBA7C997756A67D592D /* Support Files */,
+			);
+			name = IBMWatsonSpeechToTextV1;
+			path = IBMWatsonSpeechToTextV1;
+			sourceTree = "<group>";
+		};
+		24DF72669C5203B8A1B38724D30588EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9764E87308100953A70052F6DA9D945 /* IBMSwiftSDKCore.framework */,
+				469780F26DF87F2F626CAF548FD3C79C /* Starscream.framework */,
+				70F24FF4468799FE7EF4F2710E4E1CF1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		273BE44CB64D67F73E326A9CD21073A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */,
+				FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown.framework */,
+				FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */,
+				7452118E11541159AF253069C444C9C3 /* Pods_Speech_Translator.framework */,
+				07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+				36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28AE1465215795D8E15B2BAB110B6C16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C1A1425B71ABB19E21FD2E46017348C /* IBMSwiftSDKCore */,
+				CBE7196E989110C8B4C86F8772AC1549 /* IBMWatsonLanguageTranslatorV3 */,
+				0145886F2D15367B69CDC919383479F9 /* IBMWatsonSpeechToTextV1 */,
+				33DD2F6965255310BCC5CF96D1B69EAE /* IBMWatsonTextToSpeechV1 */,
+				BDB2D9C1E8E7FFF3335E980CC0DCB0B7 /* iOSDropDown */,
+				2C2107331A1068A78B1A402E5B26B398 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C2107331A1068A78B1A402E5B26B398 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A19C30E547A138949C27ED022733B /* Compression.swift */,
+				7F3DA1C6722F0F599E8E5E410A915302 /* Data+Extensions.swift */,
+				71BF8BCD87597F62538127C336343E4F /* Engine.swift */,
+				3CE41ACA6920F5361CFE22DBEE37F537 /* FoundationHTTPHandler.swift */,
+				1AF6B15A2C2772A0AE012AC66DD836C1 /* FoundationHTTPServerHandler.swift */,
+				22EF327DFD5EFFD6157ED0DE462028C4 /* FoundationSecurity.swift */,
+				4E865FC7FCDC021C100ED3E0E4821160 /* FoundationTransport.swift */,
+				83C5248D6A35E9C816D8FF462407BCB3 /* FrameCollector.swift */,
+				F248E76D521A165842825FFDCC57907B /* Framer.swift */,
+				6D051673D80BF43E2489CB168ED9FBAF /* HTTPHandler.swift */,
+				6658A08C59480D6BE59BFBBCA399C077 /* NativeEngine.swift */,
+				CF093F6E69CF990AA46D310B53A00F3B /* Security.swift */,
+				DE265B20B4A28D390ECB9A4329C21824 /* Server.swift */,
+				C3371F00803DA482D6B61C95CF32B384 /* StringHTTPHandler.swift */,
+				E7A5439F865ED63CA46AA91223E05364 /* TCPTransport.swift */,
+				96BCCFEC93A6A06A593E842AF49F3671 /* Transport.swift */,
+				131969942AE4E286C47B98EB61ACABAA /* WebSocket.swift */,
+				B91CB5F8D17E0C68C21D90319D94700D /* WebSocketServer.swift */,
+				5528BABE7B4164D3BACAEA6AD233FA48 /* WSCompression.swift */,
+				CD6E22F2F7615F0D4ACC80CE7D1645EF /* WSEngine.swift */,
+				B6684F020F3A417F7BA42EBF2258C0FF /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		33DD2F6965255310BCC5CF96D1B69EAE /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXGroup;
+			children = (
+				8FF9C35B8A94392164D237C0E4384670 /* CustomModel.swift */,
+				B7A2E23474DA347F1F9CE647362002E2 /* CustomModels.swift */,
+				68B6EF0E108CFBFFB1D1D62355E3DC5A /* InsecureConnection.swift */,
+				BA561DB14DDB3FB66C017785FFCFD83D /* ogg.h */,
+				DF8EF4CB4ECF03D74D13F384885C98F8 /* opus.h */,
+				9A07C1168643EEF50A4490FA2E2B1686 /* opus_defines.h */,
+				73B2FC43B2A6B7DE0C2705B5FDFF3DAE /* opus_header.c */,
+				EF993BA189F8A034BF18A70962271A85 /* opus_header.h */,
+				B0AC64E09C87A94639A286F86349E1B9 /* opus_multistream.h */,
+				3B945C1985C1352BFA59EA8AEEC37E48 /* opus_types.h */,
+				359216B052E3C72550184998F7B3339F /* os_types.h */,
+				956C7E9575138E806215B8B7BC0A9909 /* Pronunciation.swift */,
+				D9F7770FDD8A2892A44949CCC83285A4 /* Shared.swift */,
+				0B6BB7A6088AD611BCAB80F65B3898AC /* SupportedFeatures.swift */,
+				AE83106F8868BE9FCD44F4AEACAA7ADB /* TextToSpeech.swift */,
+				043083A03C283E3CD00787D3FC3EB20B /* TextToSpeechDecoder.swift */,
+				62FBB097A0FEB91CFFBBACFA30CC0113 /* Translation.swift */,
+				84A2138DBFF56647D2E97D2B9CEBC706 /* Voice.swift */,
+				818F1BC4385FED02834595C9DCA230BB /* Voices.swift */,
+				449B4E4FC689DD5AB4B35AC3B1C8632D /* WAVRepair.swift */,
+				EA93BDBBAA8F8FCE4F11C8A059026608 /* Word.swift */,
+				F636B63AFBB4FD5C8F2CE6EE3B4A4F01 /* Words.swift */,
+				54D36F4FE46A15FF651AAC22FDFD244F /* Frameworks */,
+				5327A540B4F40E88B81DB17A609CAE8A /* Support Files */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			path = IBMWatsonTextToSpeechV1;
+			sourceTree = "<group>";
+		};
+		5327A540B4F40E88B81DB17A609CAE8A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3D857CBB96FC8B7888D65FEA20095 /* IBMWatsonTextToSpeechV1.modulemap */,
+				885647330AB47E71FB689E340D72055A /* IBMWatsonTextToSpeechV1-dummy.m */,
+				27C70FA013AABE5DD45A2577D7428E82 /* IBMWatsonTextToSpeechV1-Info.plist */,
+				4E41FEF16350CDD2381EB6315E33E9EC /* IBMWatsonTextToSpeechV1-prefix.pch */,
+				8D05844291CFA83BE9C33153C973EE4D /* IBMWatsonTextToSpeechV1-umbrella.h */,
+				53A31B2D2D8779E02DDAA6BCDF7E03D0 /* IBMWatsonTextToSpeechV1.debug.xcconfig */,
+				5A3CF117D853897F48BFD9C9EDCE04AE /* IBMWatsonTextToSpeechV1.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonTextToSpeechV1";
+			sourceTree = "<group>";
+		};
+		54D36F4FE46A15FF651AAC22FDFD244F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A82248C99DE97A52BFD2B84E74514D /* libogg_tts.a */,
+				5B1F8D6CC2166B2F11B588272CF5F194 /* libopus_tts.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BE92B7AFD532A669291D1B83C6031AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B00AEE3BEB1B0B29871CE598CC199D2 /* libogg_stt.a */,
+				74C78360C5112D25BE16F6A117B193DD /* libopus_stt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C1A1425B71ABB19E21FD2E46017348C /* IBMSwiftSDKCore */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE2AF527B43A38D33B7C8F49C66817 /* Authentication.swift */,
+				1B53F30CA9554E43E8AEC4816D00C416 /* CloudPakForDataAuthenticator.swift */,
+				F3400987A4AFC69A431C2CCFF792F27D /* CodableExtensions.swift */,
+				CAD1104116E8DE6FA6920EB63957153A /* ConfigBasedAuthenticatorFactory.swift */,
+				D4C6CB378393D206F3CDE406393B0907 /* CredentialUtils.swift */,
+				5DC11C51DF06191861C21D2201C773CB /* IAMAuthenticator.swift */,
+				66E2F5DB16027C625F73472F7B3B507F /* InsecureConnection.swift */,
+				E525BC287B3B9EC35FDA6F1EA1654D44 /* JSON.swift */,
+				79F0DC53D0FAA5955DB9AF3C39421B03 /* JWT.swift */,
+				A9215C0F90BACEA897DAA8D102C10239 /* MultipartFormData.swift */,
+				EB314083527AA63FE9086921249C5745 /* RestError.swift */,
+				F3B2DF584317CA136E0F1E1AF869C160 /* RestRequest.swift */,
+				4759D63A1D0FC233BA77A1DD7AFF2EF7 /* RestResponse.swift */,
+				F715EF30225643CB76189B1B69956A6B /* Support Files */,
+			);
+			name = IBMSwiftSDKCore;
+			path = IBMSwiftSDKCore;
+			sourceTree = "<group>";
+		};
+		70F24FF4468799FE7EF4F2710E4E1CF1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				968AECFFD1F448068FED6F3B0F74B2DF /* Foundation.framework */,
+				5818AC34B96AABD34EA24A5B18309F68 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		88F61C805E1419990E0386B5DEF81EC2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F86A2CF9AA895C906896507F37A325C /* Pods-Speech Translator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8D6DB8672B2B7CBA7C997756A67D592D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2030B54603A542495A53C5260704CCC0 /* IBMWatsonSpeechToTextV1.modulemap */,
+				3B7D8F6E022A4E8CB13B7E996E96F7DE /* IBMWatsonSpeechToTextV1-dummy.m */,
+				B83F899E9DDE786176FBFDEBEE8CEB1E /* IBMWatsonSpeechToTextV1-Info.plist */,
+				FFAA5864EFF946085E249DAD7B661DD6 /* IBMWatsonSpeechToTextV1-prefix.pch */,
+				667F787A7C47545FFC4220CEA2242361 /* IBMWatsonSpeechToTextV1-umbrella.h */,
+				46AF3E394BDF7E2E7B9E1B06153785FD /* IBMWatsonSpeechToTextV1.debug.xcconfig */,
+				FDB565DB3BBBBE9C72DCCE85D2E046FB /* IBMWatsonSpeechToTextV1.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonSpeechToTextV1";
+			sourceTree = "<group>";
+		};
+		8F86A2CF9AA895C906896507F37A325C /* Pods-Speech Translator */ = {
+			isa = PBXGroup;
+			children = (
+				DB52CF0D5167D92EE71BA90A864B98F8 /* Pods-Speech Translator.modulemap */,
+				E3D7D10F0F834FC67515A10528B12059 /* Pods-Speech Translator-acknowledgements.markdown */,
+				2EB192B7CF3F9BEB8CC5D872815F5743 /* Pods-Speech Translator-acknowledgements.plist */,
+				66C8C9C8EBB058FF92ECF2154D12556D /* Pods-Speech Translator-dummy.m */,
+				4B0552199BF1018495982D387AC5E2BD /* Pods-Speech Translator-frameworks.sh */,
+				84F55F89F2364896451A88AB578AADE4 /* Pods-Speech Translator-Info.plist */,
+				C9D1E4384E2D628C3F41DE2F9E1D6AAD /* Pods-Speech Translator-umbrella.h */,
+				140E273391B381C02B43E3BAF2FF5D14 /* Pods-Speech Translator.debug.xcconfig */,
+				55D1F57CA88BD479375D7AD649760B13 /* Pods-Speech Translator.release.xcconfig */,
+			);
+			name = "Pods-Speech Translator";
+			path = "Target Support Files/Pods-Speech Translator";
+			sourceTree = "<group>";
+		};
+		B2BDA214E698AAC6BCDB225BF0B2B5B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADE27BC437A71984FCCBC9059DB395D9 /* IBMWatsonLanguageTranslatorV3.modulemap */,
+				4E5BFB35F9BDCE6C0BF28B5EDBF6F311 /* IBMWatsonLanguageTranslatorV3-dummy.m */,
+				BD019ED30B972F5BC9973DD196DF16C3 /* IBMWatsonLanguageTranslatorV3-Info.plist */,
+				F726CB0A5475D33973BA154AC3410473 /* IBMWatsonLanguageTranslatorV3-prefix.pch */,
+				A3FBB4E7782009436AAAFD7831A45C09 /* IBMWatsonLanguageTranslatorV3-umbrella.h */,
+				108455A9152EBECB6052A1B0B8E8FD21 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */,
+				E3BF8EFB12AEFC1738FAD022265A29CF /* IBMWatsonLanguageTranslatorV3.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonLanguageTranslatorV3";
+			sourceTree = "<group>";
+		};
+		B6684F020F3A417F7BA42EBF2258C0FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A949E7AE686A2364991FD8DBAE2F35A /* Starscream.modulemap */,
+				CFAC7B01C97309B9B04D99F5D31395AA /* Starscream-dummy.m */,
+				A36D4B001A2901234525A6E0F6206FD9 /* Starscream-Info.plist */,
+				AAFFC15FF4AD312DBDE1A5787E42D1B7 /* Starscream-prefix.pch */,
+				A1DE327F13350D7E22188C05CF9CFCA2 /* Starscream-umbrella.h */,
+				76EB9EFBED46DC23B4050B420B48E08C /* Starscream.debug.xcconfig */,
+				18710C1089D8926627D7F13940497A45 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		BDB2D9C1E8E7FFF3335E980CC0DCB0B7 /* iOSDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				41BAAFA944D80BDAF5362FF032367800 /* iOSDropDown.swift */,
+				F1A0C5B13A757C0D7A3CAE460E09C3AA /* Support Files */,
+			);
+			name = iOSDropDown;
+			path = iOSDropDown;
+			sourceTree = "<group>";
+		};
+		CBE7196E989110C8B4C86F8772AC1549 /* IBMWatsonLanguageTranslatorV3 */ = {
+			isa = PBXGroup;
+			children = (
+				946D93B1AF4A11D625DC33765EFEF5C8 /* DeleteModelResult.swift */,
+				3E93BA5D7D168F4732510A0F36FF42C3 /* DocumentList.swift */,
+				44B1A02D37B2CAC8B4D42500F13857E8 /* DocumentStatus.swift */,
+				F1551519512D828EDDDF57183BAF8CF0 /* IdentifiableLanguage.swift */,
+				C6C709D6417F10408CCCEAEA4D5A65FF /* IdentifiableLanguages.swift */,
+				07213E821C02BF30C9EFDD7474DD0D35 /* IdentifiedLanguage.swift */,
+				739FFDF5795688E57DC163B751FCAEF7 /* IdentifiedLanguages.swift */,
+				3C813B9885AE8BBE7C657658E1E59810 /* InsecureConnection.swift */,
+				0C6766274A0C46BB22A5DDA6DDB00721 /* Language.swift */,
+				08902457C3B95BF7091D1881EC080D4D /* Languages.swift */,
+				1ED2680FC790C8845E85C54D245C9618 /* LanguageTranslator.swift */,
+				61B89F0360CE5CEEBABE1B4F37C6D32E /* Shared.swift */,
+				BB9EEFE9A5E3879EF86DFC9CAB8D7D72 /* Translation.swift */,
+				60AA4A1082A95358E98E99A57B347404 /* TranslationModel.swift */,
+				C94A8D1ED82E429F22D38B7D605E7277 /* TranslationModels.swift */,
+				9A7264D784F48822001BCED00B110957 /* TranslationResult.swift */,
+				B2BDA214E698AAC6BCDB225BF0B2B5B0 /* Support Files */,
+			);
+			name = IBMWatsonLanguageTranslatorV3;
+			path = IBMWatsonLanguageTranslatorV3;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				24DF72669C5203B8A1B38724D30588EA /* Frameworks */,
+				28AE1465215795D8E15B2BAB110B6C16 /* Pods */,
+				273BE44CB64D67F73E326A9CD21073A7 /* Products */,
+				88F61C805E1419990E0386B5DEF81EC2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A0C5B13A757C0D7A3CAE460E09C3AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E07767287D1E34AFD9C180EA6BD9CCFC /* iOSDropDown.modulemap */,
+				1D872FE52573AE4ABA6D344D45974DD9 /* iOSDropDown-dummy.m */,
+				D13D8ABC371DA31F38469FE734B64B1B /* iOSDropDown-Info.plist */,
+				CC2492543DF5AC457A8F9268BD3CE2E9 /* iOSDropDown-prefix.pch */,
+				278DD81624B7C841A8BDA6105A572AE0 /* iOSDropDown-umbrella.h */,
+				B7EB49F0C2452CA8B222D6F01475C43E /* iOSDropDown.debug.xcconfig */,
+				E8A268976C57632FDEB4808475B5FF30 /* iOSDropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDropDown";
+			sourceTree = "<group>";
+		};
+		F715EF30225643CB76189B1B69956A6B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1585B9B62FE0B7BD1C4B91E9340957 /* IBMSwiftSDKCore.modulemap */,
+				BC9C2249AEAC373C61FF82580A63494E /* IBMSwiftSDKCore-dummy.m */,
+				DA5585C8E4A827965003F57AB2C0B068 /* IBMSwiftSDKCore-Info.plist */,
+				695F04BC2FF85E07E64D088FC3B74BAD /* IBMSwiftSDKCore-prefix.pch */,
+				C8287F367DCB2B2CD060659B23D0CCD8 /* IBMSwiftSDKCore-umbrella.h */,
+				BC6663117C00FD4AFC3517EDE9FEA7C1 /* IBMSwiftSDKCore.debug.xcconfig */,
+				745A57064A4B3E626890A31F07BADEBF /* IBMSwiftSDKCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMSwiftSDKCore";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DDEC8005B616FFC0A7738DCEC48706 /* IBMSwiftSDKCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75D62C25DB65E4B1FEFBF60ABEF6C984 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C209C7FA5C7B4A9C055787C6241D64 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839805D509294F3289A4034758CB0E4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26785BDE8B70387A32A9379A8B246AD8 /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */,
+				77009D7E9862261A86027A20476B9DF2 /* ogg.h in Headers */,
+				308CC373FA5EE43A64BC7466947A8129 /* opus.h in Headers */,
+				B53DB3786E78BF0DDF783F844D7F61CF /* opus_defines.h in Headers */,
+				5586733EB318E2EBC979929E31E36F8A /* opus_header.h in Headers */,
+				33E8748718ABB69614A14FEBF59093F7 /* opus_multistream.h in Headers */,
+				79665C350ECC27F5E7F05B12000CA5E6 /* opus_types.h in Headers */,
+				E1A9A8D8A30E7B1170B2DCF5A5ED2F08 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A905842D7F38038C5AE524E9DF7789 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6762724102132C861217B911E70056ED /* iOSDropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC05D31C40D2FFF7BFE4A560CB614F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26A4D3C8813ABAB72F1FBD79CB656C8 /* IBMWatsonSpeechToTextV1-umbrella.h in Headers */,
+				EB04532171415A89B2BE88BF039C4DF6 /* ogg.h in Headers */,
+				A532272BB88A456EF3CEB0CAEDCD3D81 /* opus.h in Headers */,
+				5F295BA22CDCD69B6BD499577C06562D /* opus_defines.h in Headers */,
+				1064BD3196C127515261D0A3DCB71C87 /* opus_multistream.h in Headers */,
+				D51B1E7EC00C2198E69CEB8BD02ECAEF /* opus_types.h in Headers */,
+				22CE5D82739AEE7463086EF22194CAE7 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB7A3AF14BCDB682B8B7099D39C065E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65992668D051277A55EC8E2A18FB931B /* IBMWatsonLanguageTranslatorV3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4557A5DE85582D87B12D269DA9015A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D89C22BF4E0BE4C9F4AF1019ACC6CA8 /* Pods-Speech Translator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		135BC02E4F5443AE0012FF0577E642F9 /* Pods-Speech Translator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3F9B6F728F8417BFC41744E39E08FF /* Build configuration list for PBXNativeTarget "Pods-Speech Translator" */;
+			buildPhases = (
+				F4557A5DE85582D87B12D269DA9015A9 /* Headers */,
+				550E7BAE14BFF781A436AF009ACC6E8B /* Sources */,
+				DF092CC1CC2B31BA076D15AEBF75D3DB /* Frameworks */,
+				B59946B793BCA68340743B01E109372C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19A6929BC6006B49BE67BA5D865B1EAF /* PBXTargetDependency */,
+				21B1781728C4A77D98466D0C85A73702 /* PBXTargetDependency */,
+				0699F152599A7371A331E358E8E7A747 /* PBXTargetDependency */,
+				911380A5631B993FC7B51805EFEA51C6 /* PBXTargetDependency */,
+				6E87648659136C222642F4B82B0B9153 /* PBXTargetDependency */,
+				65650D7BDB7498C0A507F406481FDAFF /* PBXTargetDependency */,
+			);
+			name = "Pods-Speech Translator";
+			productName = "Pods-Speech Translator";
+			productReference = 7452118E11541159AF253069C444C9C3 /* Pods_Speech_Translator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A476A331E996DC82BDA1CD0E8A43F8B6 /* Build configuration list for PBXNativeTarget "iOSDropDown" */;
+			buildPhases = (
+				93A905842D7F38038C5AE524E9DF7789 /* Headers */,
+				51ADBD82176C61B9136F2C18746D6E55 /* Sources */,
+				25DF5A9AC595EB65396B0F7FD3EC355F /* Frameworks */,
+				4F2761F0F0D962265232D9EE899A184E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDropDown;
+			productName = iOSDropDown;
+			productReference = FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* iOSDropDown.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E584BE8D6FB45865BF084F0095CA83 /* Build configuration list for PBXNativeTarget "IBMWatsonSpeechToTextV1" */;
+			buildPhases = (
+				AFC05D31C40D2FFF7BFE4A560CB614F7 /* Headers */,
+				4131D5B113CA60CBB047C44974F4C64B /* Sources */,
+				B84B6196EE193DD43EB7EFBB1A722721 /* Frameworks */,
+				637954C20884E5DCDE8940008706E801 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0687AC92E747449302C76D413EAA656 /* PBXTargetDependency */,
+				92F2D629BA6FD6CE9D881C2E4490A170 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonSpeechToTextV1;
+			productName = IBMWatsonSpeechToTextV1;
+			productReference = 07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6B9D96DD4D41BF754784151AD1350B /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				75D62C25DB65E4B1FEFBF60ABEF6C984 /* Headers */,
+				276F95B76E12AF45C6593312C8AAD297 /* Sources */,
+				B7D701EFD6375F09C0A65885F9624E61 /* Frameworks */,
+				506ADABD194DB51FC01C563E3DCAF148 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFB3EE62D2E5EEFC61814FFDA623BC4 /* Build configuration list for PBXNativeTarget "IBMWatsonLanguageTranslatorV3" */;
+			buildPhases = (
+				BCB7A3AF14BCDB682B8B7099D39C065E /* Headers */,
+				E58A6B5ADA471267FA559580D7EB1FC7 /* Sources */,
+				579CB7596D00961B81C422D57DE83719 /* Frameworks */,
+				26FF7274A8FC33EC80C285CE46541299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAAD16FD4582DA975D8FDF3B365B1EC3 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonLanguageTranslatorV3;
+			productName = IBMWatsonLanguageTranslatorV3;
+			productReference = FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */;
+			buildPhases = (
+				5F7FFA05F59CC8CF51AF629877A188A0 /* Headers */,
+				41794AAA12C46CD1E820B389596A05EE /* Sources */,
+				B02BC3EDD97C4B5C693165C5F2F86DB2 /* Frameworks */,
+				366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMSwiftSDKCore;
+			productName = IBMSwiftSDKCore;
+			productReference = D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F312E832804D42D4AC8FEA4A4114F86 /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */;
+			buildPhases = (
+				839805D509294F3289A4034758CB0E4E /* Headers */,
+				86D77693B0943BA4367F24601CF07B77 /* Sources */,
+				1B019809A962AC2740D46F8890C437E3 /* Frameworks */,
+				9490E39439B291F763D669DA401C338E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3CC0D1D0062F4F4F545DD48679221A2 /* PBXTargetDependency */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			productName = IBMWatsonTextToSpeechV1;
+			productReference = 36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 273BE44CB64D67F73E326A9CD21073A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */,
+				B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */,
+				85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */,
+				D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */,
+				3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */,
+				135BC02E4F5443AE0012FF0577E642F9 /* Pods-Speech Translator */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26FF7274A8FC33EC80C285CE46541299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		366DBA4C8EB69D4EC0F2468E071776F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F2761F0F0D962265232D9EE899A184E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506ADABD194DB51FC01C563E3DCAF148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637954C20884E5DCDE8940008706E801 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9490E39439B291F763D669DA401C338E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B59946B793BCA68340743B01E109372C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		276F95B76E12AF45C6593312C8AAD297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7157EDEFF8F06C207EC418C6233348 /* Compression.swift in Sources */,
+				6993E33BF849B2114932CA289525E221 /* Data+Extensions.swift in Sources */,
+				728A1F1A064BCF2A8CCF21D2E810B1DC /* Engine.swift in Sources */,
+				3CE0153EC1B72724C2C31EF87F70A249 /* FoundationHTTPHandler.swift in Sources */,
+				71E9FD8C5000E94B6614EEC29055A8AE /* FoundationHTTPServerHandler.swift in Sources */,
+				968F98CDDCC95F21A0309247A9A1A05C /* FoundationSecurity.swift in Sources */,
+				F0116F78D2FBD9EB30C24A6C53DB16D9 /* FoundationTransport.swift in Sources */,
+				A4D604276B2C52CFBCCB56A73486C03D /* FrameCollector.swift in Sources */,
+				25F90E37AE4FDA049BE97B789B87693A /* Framer.swift in Sources */,
+				DF7797A22540146D25EC960E13E8BD58 /* HTTPHandler.swift in Sources */,
+				BD7D003AF1715708442206660E6A5710 /* NativeEngine.swift in Sources */,
+				3DF36AD2EFF90C9036DFDAE2C8C9142C /* Security.swift in Sources */,
+				9BDD4010EC4EBA261FBA53E6BFCE69BC /* Server.swift in Sources */,
+				E917A8FF7860877AF65A6F7657C8DD75 /* Starscream-dummy.m in Sources */,
+				97E33EFDA1F7FF563168A39433F0D10D /* StringHTTPHandler.swift in Sources */,
+				11BED89B08A3DD655A4EB3CFFF6D0CBD /* TCPTransport.swift in Sources */,
+				94DFC979AC9D61935D7C52821324C976 /* Transport.swift in Sources */,
+				56D190814595FDA52586A70531D5BD71 /* WebSocket.swift in Sources */,
+				59BD93AC2965588B8D0420F5CCDC74F0 /* WebSocketServer.swift in Sources */,
+				4DB92BD27B1C326253A19E848E60726A /* WSCompression.swift in Sources */,
+				F7757D1B90A012586A8BAE599C190933 /* WSEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4131D5B113CA60CBB047C44974F4C64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93479FDF731A881E34A4139C880B8E6C /* AcousticModel.swift in Sources */,
+				6E0F94F0BDAAE08D2F096BBD5B40B530 /* AcousticModels.swift in Sources */,
+				9B85D5741AAF53EE3FB0B83CC375B96D /* AudioDetails.swift in Sources */,
+				BFE980A3BF9F560772249EBA6CD4839D /* AudioListing.swift in Sources */,
+				408ACE5CB5C3B8C904271BE3F21FCCB2 /* AudioMetrics.swift in Sources */,
+				6F467B397209860923FECAB25D665CEC /* AudioMetricsDetails.swift in Sources */,
+				C37EA631C3F88C79DFB75D383B90CECE /* AudioMetricsHistogramBin.swift in Sources */,
+				5EE4DB9B219DCBC6399A4B0AC7B14B18 /* AudioResource.swift in Sources */,
+				A06D1F24843ABAE7523ED91DCE86F8BF /* AudioResources.swift in Sources */,
+				3BF746BEEAE388D45D0733365F7A167A /* Corpora.swift in Sources */,
+				D2AEB41458DD0915842D472AF889C8E4 /* Corpus.swift in Sources */,
+				F6709B2999D937D9154E673090612C83 /* CustomWord.swift in Sources */,
+				A33EB3970739A73390F638CB7AC827E7 /* Grammar.swift in Sources */,
+				B74EA4AC479CBAFAEAEDCFA8AFC27B85 /* Grammars.swift in Sources */,
+				51B75A9881BA8938065AF9B376F43131 /* IBMWatsonSpeechToTextV1-dummy.m in Sources */,
+				D6878F4B2CA098618AAA45BD759324E4 /* InsecureConnection.swift in Sources */,
+				CF78FDA455A34AEC2E21EFCA8754DB63 /* KeywordResult.swift in Sources */,
+				8735EE64F55A8CAD4237B0FEEB0B5B69 /* LanguageModel.swift in Sources */,
+				F947B92294D94EDD4C11743EB7D83A58 /* LanguageModels.swift in Sources */,
+				11D4D4A4B7C965412CE5DF3B554CE534 /* ProcessedAudio.swift in Sources */,
+				A46519968DC2FEA8D7602F59B226D76C /* ProcessingMetrics.swift in Sources */,
+				F56F71484AA48DC4C05C3C389CC7F153 /* RecognitionJob.swift in Sources */,
+				1AE06CDF3D1A3E7A2396C90F03D05A6F /* RecognitionJobs.swift in Sources */,
+				C7FE2E6F1917F2557BC9FF842FB25C11 /* RecognitionSettings.swift in Sources */,
+				BE384A1DEBD232CC0BD279AE5E9474B6 /* RecognitionState.swift in Sources */,
+				E1A238655E0F61D2FEF33FA409C80B98 /* RecognitionStop.swift in Sources */,
+				F778448E9143C511E67C833E49F2AD8C /* RecognizeCallback.swift in Sources */,
+				4F028355FE9EB8A88520CE38A7FAE72B /* RegisterStatus.swift in Sources */,
+				E2E99E797FB0191095CDA6E0BBFA671D /* Shared.swift in Sources */,
+				AE834DA6C03CBFC0D3B241F11A3FCF55 /* SpeakerLabelsResult.swift in Sources */,
+				37EBDDDA92D24A735C26CD1D8C89F495 /* SpeechModel.swift in Sources */,
+				CAF1EBD93278EF3CD648C5D5E2DB8A97 /* SpeechModels.swift in Sources */,
+				48391F8F999C002E020D899522646499 /* SpeechRecognitionAlternative.swift in Sources */,
+				FEA0BC6A5C1F17423DC51B81E0FB67AF /* SpeechRecognitionResult.swift in Sources */,
+				28C7EF41A2434123D91DCC73099B0D79 /* SpeechRecognitionResults.swift in Sources */,
+				96C8E0D2BC13952BD8DF2849BC4FB914 /* SpeechRecognitionResultsAccumulator.swift in Sources */,
+				91B6BAC8393A672A8EBCC07E67CF2670 /* SpeechToText+Recognize.swift in Sources */,
+				94A3659702D0A5C712DAFC6E23695DF9 /* SpeechToText.swift in Sources */,
+				B55E48DDDBE846C7FF4A4CA23AF82226 /* SpeechToTextEncoder.swift in Sources */,
+				F9587B565B34E2A2059024545AAE35DA /* SpeechToTextRecorder.swift in Sources */,
+				445B3A0C75E447B9BE6CDFF2734068B2 /* SpeechToTextSession.swift in Sources */,
+				43745AFA4CBD43D3BC7FD9C1A9629646 /* SpeechToTextSocket.swift in Sources */,
+				5F8D1AF4DECE7871B47AEAECEA4572B2 /* SpeechToTextState.swift in Sources */,
+				2C681C63861AAB0B43E8BE26F566B1CE /* SupportedFeatures.swift in Sources */,
+				CC2783C287FEDE70B95CA81C5893EA3C /* TrainingResponse.swift in Sources */,
+				A707BB7026735BFE5CFAF7ACD20250C5 /* TrainingWarning.swift in Sources */,
+				2A182643D55A64AEF52F268AE2820991 /* Word.swift in Sources */,
+				AA5C3CFCB327C3CE7CDA397AFF7CE499 /* WordAlternativeResult.swift in Sources */,
+				B233223E4AF19EF80B2D93B577125D8B /* WordAlternativeResults.swift in Sources */,
+				1DA88120EA3FD6C1208A977CB2B9848D /* WordConfidence.swift in Sources */,
+				CDE2FD159B470EC9DEF55E74BB4EABFD /* WordError.swift in Sources */,
+				D2EF46CAC2F7F0D0516299C8BB62EF79 /* Words.swift in Sources */,
+				4410FA9172805B0FFAC65B1C6299884D /* WordTimestamp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41794AAA12C46CD1E820B389596A05EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D168DEEA9F1B0483E5D24C40382A93 /* Authentication.swift in Sources */,
+				59354C94A50B483675B4C9957DA0E761 /* CloudPakForDataAuthenticator.swift in Sources */,
+				B787B5FCD2787858439AF870C5E0B711 /* CodableExtensions.swift in Sources */,
+				891829B1B3A1FE3E3AEEB4517EFE6CA4 /* ConfigBasedAuthenticatorFactory.swift in Sources */,
+				FDFFB46B16962698755E53062E1F40FA /* CredentialUtils.swift in Sources */,
+				AA9560C73201DC9B6F2D888C54935890 /* IAMAuthenticator.swift in Sources */,
+				6463CF8A091A1004DA4C7D6D4C465050 /* IBMSwiftSDKCore-dummy.m in Sources */,
+				6FA1A1CCAC31B709EF1420192C3A2BE0 /* InsecureConnection.swift in Sources */,
+				D75AE0BE3046E4AE278FF5A098B5769A /* JSON.swift in Sources */,
+				785C4BE567B07F4844634B5D0BFA82CA /* JWT.swift in Sources */,
+				5E23AF5BA33DF108D10C3F0C29912CA1 /* MultipartFormData.swift in Sources */,
+				9A5A4C89A39379E1A3EB09F39B2453E3 /* RestError.swift in Sources */,
+				2AAD37619C70C3BAC535E8E96EFA0EE3 /* RestRequest.swift in Sources */,
+				80DF81F082D9C2AE5DA1E8F9FEE8DA80 /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51ADBD82176C61B9136F2C18746D6E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C312131E6526BFB7C1CB92D93D58FCC7 /* iOSDropDown-dummy.m in Sources */,
+				6ADFB626C34AA35AC883469526699F8D /* iOSDropDown.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		550E7BAE14BFF781A436AF009ACC6E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764171CF43AA317DAD7750BC7671E4F8 /* Pods-Speech Translator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D77693B0943BA4367F24601CF07B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E540E9C4DDE9EA4E6A07C4E656F2F0 /* CustomModel.swift in Sources */,
+				F477273303E93FC74FE705F8602E203E /* CustomModels.swift in Sources */,
+				E5A15DC34F37FAC6C0D0E377CD1C6E78 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */,
+				CB547054FAF87685CDAF09BA017CC163 /* InsecureConnection.swift in Sources */,
+				2667CEA9179782A3051634C099591DC2 /* opus_header.c in Sources */,
+				2BF93E18012690CDAA5C75B80650D2A6 /* Pronunciation.swift in Sources */,
+				661EED58B7533F00167189E89821E383 /* Shared.swift in Sources */,
+				7C18EBC8417FC957F1E559256A36CD36 /* SupportedFeatures.swift in Sources */,
+				36FEE370E06A8209BAF73451ECE72148 /* TextToSpeech.swift in Sources */,
+				4E84F60A40049AE3156DEFB2A806769B /* TextToSpeechDecoder.swift in Sources */,
+				9797AAFC91374A971DD1DB51A2ABF6BB /* Translation.swift in Sources */,
+				4B2F0EA0361EB614F71CA2B3A70DAE3B /* Voice.swift in Sources */,
+				EB35D984E24DFB41A15AABD6EE4651BE /* Voices.swift in Sources */,
+				213C059ED690578660589D54ACDAB5B1 /* WAVRepair.swift in Sources */,
+				07870DA74BEB543A2A99CEB1C75D9D17 /* Word.swift in Sources */,
+				30AF1CF14B524F7B10FBC4F3E100E00A /* Words.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E58A6B5ADA471267FA559580D7EB1FC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E8E23D04A09946D21940F4A11027FA0 /* DeleteModelResult.swift in Sources */,
+				4BEA7B89139FCD2BC124408842859A55 /* DocumentList.swift in Sources */,
+				A2BA09A91052C6026399ACCE45A6207B /* DocumentStatus.swift in Sources */,
+				2D0E115FFBA681D663D89F1E04D6C071 /* IBMWatsonLanguageTranslatorV3-dummy.m in Sources */,
+				7205FDE4DDC8C987A9CA3E7309C8177F /* IdentifiableLanguage.swift in Sources */,
+				8AE2E5E92206C6ACAA232325C784B3FA /* IdentifiableLanguages.swift in Sources */,
+				2EEFF088C1205E6C09F2F96F2DB51CEB /* IdentifiedLanguage.swift in Sources */,
+				7E921DB0F2F2CF67CB0350B3E0A1831C /* IdentifiedLanguages.swift in Sources */,
+				311419894F289D845C5537DA682EE17B /* InsecureConnection.swift in Sources */,
+				C8D48DC67D1EF83CC85E3EF245748E93 /* Language.swift in Sources */,
+				ACAF56A4EDCF29ADA55009B72D74CA68 /* Languages.swift in Sources */,
+				6AB5BD38EBAA70F49E5AB179DC9D5B6F /* LanguageTranslator.swift in Sources */,
+				0D605CB4A8E36A327F7B7CA94A5F1E16 /* Shared.swift in Sources */,
+				8008152C269A909A95FEB5AB079167E3 /* Translation.swift in Sources */,
+				76254230A99D8AE72320C62F3B06F7A8 /* TranslationModel.swift in Sources */,
+				D464F1179583F0E62471B9B88DFC4B75 /* TranslationModels.swift in Sources */,
+				A3491D7A07F44244D2158BCA31314E71 /* TranslationResult.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0699F152599A7371A331E358E8E7A747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonSpeechToTextV1;
+			target = 85F80CBB88E15EBEE7535E1C6ED1B185 /* IBMWatsonSpeechToTextV1 */;
+			targetProxy = D0A7082962EA13B9B37F9CAC43128337 /* PBXContainerItemProxy */;
+		};
+		19A6929BC6006B49BE67BA5D865B1EAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = AA68F5231A760DC2EE1E291F3B037024 /* PBXContainerItemProxy */;
+		};
+		21B1781728C4A77D98466D0C85A73702 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonLanguageTranslatorV3;
+			target = B2B724283F9BE15AC7375A6203787C69 /* IBMWatsonLanguageTranslatorV3 */;
+			targetProxy = 5B9AA17DE9949E968BA582C958DAF1C0 /* PBXContainerItemProxy */;
+		};
+		65650D7BDB7498C0A507F406481FDAFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDropDown;
+			target = 3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */;
+			targetProxy = AE874BEAB0D76D1ECB62BE4DCE6D0050 /* PBXContainerItemProxy */;
+		};
+		6E87648659136C222642F4B82B0B9153 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 0AA3758F9FA790F3C6989AA9A5C17F58 /* PBXContainerItemProxy */;
+		};
+		911380A5631B993FC7B51805EFEA51C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonTextToSpeechV1;
+			target = D0C8766A76CF406E4C2FDDF51E397DC3 /* IBMWatsonTextToSpeechV1 */;
+			targetProxy = E41BC573B34461E098AF17A31870282C /* PBXContainerItemProxy */;
+		};
+		92F2D629BA6FD6CE9D881C2E4490A170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = CC37260F6D7B9E662C0514E8D35FA096 /* PBXContainerItemProxy */;
+		};
+		CAAD16FD4582DA975D8FDF3B365B1EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = CC6198762B1A44FA02D149A173CEA9A1 /* PBXContainerItemProxy */;
+		};
+		D3CC0D1D0062F4F4F545DD48679221A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 72AD2B5D3C1D415B35BD63BC43DD143C /* PBXContainerItemProxy */;
+		};
+		E0687AC92E747449302C76D413EAA656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMSwiftSDKCore;
+			target = C212BBFAF6FC8270BF5BEF8057998E30 /* IBMSwiftSDKCore */;
+			targetProxy = 5F03AEFC377E28C3CCF0B0B6795486FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0401C0712F0959D44D8EF85AC5E15400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AF3E394BDF7E2E7B9E1B06153785FD /* IBMWatsonSpeechToTextV1.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1.modulemap";
+				PRODUCT_MODULE_NAME = SpeechToText;
+				PRODUCT_NAME = SpeechToText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23EAEA1FFEAD28B6F45B9B6B2E4A7695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 108455A9152EBECB6052A1B0B8E8FD21 /* IBMWatsonLanguageTranslatorV3.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3.modulemap";
+				PRODUCT_MODULE_NAME = LanguageTranslator;
+				PRODUCT_NAME = LanguageTranslator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2FC0CFFA695A55D924C17D76752DA282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BF8EFB12AEFC1738FAD022265A29CF /* IBMWatsonLanguageTranslatorV3.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonLanguageTranslatorV3/IBMWatsonLanguageTranslatorV3.modulemap";
+				PRODUCT_MODULE_NAME = LanguageTranslator;
+				PRODUCT_NAME = LanguageTranslator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4AD2C586214E2FEB2BE5D2C42176C87C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18710C1089D8926627D7F13940497A45 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C07B7A061B7CDB1BDB1F41D50820C5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3CF117D853897F48BFD9C9EDCE04AE /* IBMWatsonTextToSpeechV1.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		57D1F0D7B55ADFF14734D7E867C93EA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140E273391B381C02B43E3BAF2FF5D14 /* Pods-Speech Translator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Speech Translator/Pods-Speech Translator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Speech Translator/Pods-Speech Translator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92111D7F4357A63D476FF4384C052E33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A268976C57632FDEB4808475B5FF30 /* iOSDropDown.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDropDown/iOSDropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSDropDown/iOSDropDown.modulemap";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		922C8359306D0A3B8ED7131B46F5A721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9777F8A98343527160CF9950B9A6980B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EB49F0C2452CA8B222D6F01475C43E /* iOSDropDown.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDropDown/iOSDropDown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSDropDown/iOSDropDown.modulemap";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9EACEBDD16FD2C1E0E76E970E8971B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 745A57064A4B3E626890A31F07BADEBF /* IBMSwiftSDKCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE85710CD85A37DC613A707E8F0200B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D1F57CA88BD479375D7AD649760B13 /* Pods-Speech Translator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Speech Translator/Pods-Speech Translator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Speech Translator/Pods-Speech Translator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1DD1A9BF14306D919F458E019E0A848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EB9EFBED46DC23B4050B420B48E08C /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC4FDBB2CC4D77665CF33A47DF8B41BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6663117C00FD4AFC3517EDE9FEA7C1 /* IBMSwiftSDKCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMSwiftSDKCore/IBMSwiftSDKCore.modulemap";
+				PRODUCT_MODULE_NAME = IBMSwiftSDKCore;
+				PRODUCT_NAME = IBMSwiftSDKCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D832C8FC372204ACDCC9FE9C0FC41919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E719024BAFA42EEE5BC107B44FB861DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB565DB3BBBBE9C72DCCE85D2E046FB /* IBMWatsonSpeechToTextV1.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonSpeechToTextV1/IBMWatsonSpeechToTextV1.modulemap";
+				PRODUCT_MODULE_NAME = SpeechToText;
+				PRODUCT_NAME = SpeechToText;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F72D8A91C653026709BF30B5799937C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A31B2D2D8779E02DDAA6BCDF7E03D0 /* IBMWatsonTextToSpeechV1.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				922C8359306D0A3B8ED7131B46F5A721 /* Debug */,
+				D832C8FC372204ACDCC9FE9C0FC41919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F312E832804D42D4AC8FEA4A4114F86 /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72D8A91C653026709BF30B5799937C9 /* Debug */,
+				4C07B7A061B7CDB1BDB1F41D50820C5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8843CC30CDE47856297265C0321AACBF /* Build configuration list for PBXNativeTarget "IBMSwiftSDKCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC4FDBB2CC4D77665CF33A47DF8B41BB /* Debug */,
+				9EACEBDD16FD2C1E0E76E970E8971B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A476A331E996DC82BDA1CD0E8A43F8B6 /* Build configuration list for PBXNativeTarget "iOSDropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9777F8A98343527160CF9950B9A6980B /* Debug */,
+				92111D7F4357A63D476FF4384C052E33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3F9B6F728F8417BFC41744E39E08FF /* Build configuration list for PBXNativeTarget "Pods-Speech Translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D1F0D7B55ADFF14734D7E867C93EA2 /* Debug */,
+				AE85710CD85A37DC613A707E8F0200B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFB3EE62D2E5EEFC61814FFDA623BC4 /* Build configuration list for PBXNativeTarget "IBMWatsonLanguageTranslatorV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EAEA1FFEAD28B6F45B9B6B2E4A7695 /* Debug */,
+				2FC0CFFA695A55D924C17D76752DA282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6B9D96DD4D41BF754784151AD1350B /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DD1A9BF14306D919F458E019E0A848 /* Debug */,
+				4AD2C586214E2FEB2BE5D2C42176C87C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5E584BE8D6FB45865BF084F0095CA83 /* Build configuration list for PBXNativeTarget "IBMWatsonSpeechToTextV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0401C0712F0959D44D8EF85AC5E15400 /* Debug */,
+				E719024BAFA42EEE5BC107B44FB861DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
